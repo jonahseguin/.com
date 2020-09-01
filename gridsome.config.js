@@ -1,16 +1,14 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
-  siteName: 'Jonah Seguin',
-  siteUrl: 'https://jonahseguin.github.io',
-  pathPrefix: '/.com',
-  plugins: [
-    {
-      use: "gridsome-plugin-tailwindcss"
-    }
-  ]
+    siteName: 'Jonah Seguin',
+    siteUrl: 'https://jonahseguin.com',
+    siteDescription: "Hi, I'm a 19-year-old Software Engineer from Edmonton, Alberta, Canada.",
+    
+    plugins: [
+        {
+            use: 'gridsome-plugin-tailwindcss',
+            options: {
+                tailwindConfig: './tailwind.config.js'
+            }
+        }
+    ]
 }

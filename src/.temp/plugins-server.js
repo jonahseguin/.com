@@ -3,6 +3,6 @@ import plugin_gridsome_plugin_tailwindcss_5 from "/Users/jonahseguin/Projects/jo
 export default [
   {
     run: plugin_gridsome_plugin_tailwindcss_5,
-    options: {"shouldImport":true,"shouldTimeTravel":true,"importUrlConfig":{"modernBrowser":true},"presetEnvConfig":{"stage":0,"autoprefixer":false,"features":{"focus-visible-pseudo-class":false,"focus-within-pseudo-class":false}}}
+    options: {"tailwindConfig":"./tailwind.config.js","shouldImport":true,"shouldTimeTravel":true,"importUrlConfig":{"modernBrowser":true},"presetEnvConfig":{"stage":0,"autoprefixer":false,"features":{"focus-visible-pseudo-class":false,"focus-within-pseudo-class":false}}}
   }
 ]

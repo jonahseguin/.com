@@ -26,7 +26,5 @@ export default {
 </script>
 
 <style>
-html {
-  font-family: "Inter", sans-serif;
-}
+
 </style>
