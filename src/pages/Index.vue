@@ -23,7 +23,7 @@
           <br />
           <p class="text-gray-700">
             I'm a {{ age() }}-year-old
-            <span class="text-purple-500">Software Engineer</span> from Edmonton, Alberta, Canada.
+            <span class="text-purple-500">software engineer</span>, <span class="text-purple-500">full-stack web developer</span>, and <span class="text-purple-500">devops engineer</span> from Edmonton, Alberta, Canada.
           </p>
           <br />
           <p class="text-gray-600">
