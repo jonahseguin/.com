@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center w-screen">
-    <div class="my-20 w-3/5 md:w-1/2">
+  <div class="flex h-screen items-center justify-center w-screen">
+    <div class="w-3/5 md:w-1/2">
       <!-- Header and navbar -->
       <div class="mb-20">
         <Header />
@@ -8,7 +8,7 @@
       </div>
 
       <!-- Router view / slot -->
-      <div class="container mt-6">
+      <div class="container p-2">
         <slot />
       </div>
 
@@ -17,6 +17,10 @@
         <Socials />
       </div>
 
+      <!-- Footer -->
+      <div class="mt-8">
+        <Footer />
+      </div>
     </div>
   </div>
 </template>
@@ -25,16 +29,28 @@
 import Header from "~/components/Header";
 import Navbar from "~/components/Navbar";
 import Socials from "~/components/Socials";
+import Footer from "~/components/Footer";
 
 export default {
   components: {
     Navbar,
     Header,
-    Socials
+    Socials,
+    Footer
   }
 };
 </script>
 
-<style>
+<style lang="scss">
+@font-face {
+  font-family: 'WithMyWoes';
+  src: url("../assets/WithMyWoes.ttf");
+  font-weight: normal;
+}
+
+.with-my-woes {
+  font-family: 'WithMyWoes', sans-serif;
+  text-transform: uppercase;
+}
 
 </style>

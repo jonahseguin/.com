@@ -1,18 +1,21 @@
 <template>
   <div class="container mx-auto">
     <nav class="flex justify-between">
-      <div>
-        <g-link to="/" class="text-purple-900 font-bold antialiased" active-class="animate-pulse">/</g-link>
+      <div class="my-1">
+        <p class="text-purple-300 font-bold with-my-woes antialiased text-xs md:text-sm">whats a website?</p>
       </div>
-      <ul class="flex flex-row">
+      <ul class="my-1 flex flex-row">
         <li class="pr-5">
-          <g-link to="/blog" class="text-purple-700 font-bold" active-class="animate-pulse">blog</g-link>
+          <g-link to="/" class="text-purple-300 font-bold" exact exact-active-class="animate-pulse">/</g-link>
         </li>
         <li class="pr-5">
-          <g-link to="/resume" class="text-purple-500 font-bold" active-class="animate-pulse">resume</g-link>
+          <g-link to="/moments" class="text-purple-500 font-bold" active-class="animate-pulse">moments</g-link>
         </li>
         <li class="pr-5">
-          <g-link to="/contact" class="text-purple-300 font-bold" active-class="animate-pulse">contact</g-link>
+          <g-link to="/resume" class="text-purple-700 font-bold" active-class="animate-pulse">resume</g-link>
+        </li>
+        <li>
+          <g-link to="/contact" class="text-purple-900 font-bold" active-class="animate-pulse">contact</g-link>
         </li>
       </ul>
     </nav>
