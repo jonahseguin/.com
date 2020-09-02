@@ -1,8 +1,8 @@
 <template>
-  <div class="flex h-screen items-center justify-center w-screen">
+  <div class="flex min-h-screen items-center justify-center w-screen">
     <div class="w-3/5 md:w-1/2">
       <!-- Header and navbar -->
-      <div class="mb-20">
+      <div class="mt-4 mb-10">
         <Header />
         <Navbar />
       </div>
@@ -13,12 +13,12 @@
       </div>
 
       <!-- Socials links -->
-      <div class="mt-20">
+      <div class="mt-10">
         <Socials />
       </div>
 
       <!-- Footer -->
-      <div class="mt-8">
+      <div class="mt-4">
         <Footer />
       </div>
     </div>

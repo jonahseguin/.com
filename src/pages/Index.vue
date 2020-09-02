@@ -1,16 +1,16 @@
 <template>
   <Layout>
     <div>
-
       <div class="flex flex-row md:flex-no-wrap flex-wrap">
-        <div class="md:mr-10 pb-6 md:pb-0 flex-shrink flex-grow self-center items-center">
+        <div class="pb-6 md:pb-0 flex-shrink flex-grow ml-auto mr-auto block md:pr-10">
           <g-image
             src="~/assets/jonah_matt_couch_bw_purple.jpg"
-            height="300"
             width="300"
+            height="300"
             fit="inside"
             position="left"
             alt="Jonah Audi"
+            quality="100"
             class="rounded-lg"
           />
         </div>

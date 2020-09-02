@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <div class="border-2 border-purple-300 border-dashed my-2"></div
+    <div class="border-2 border-purple-300 rounded-lg border-dashed my-2"></div
     >
     <ul class="flex flex-row justify-between items-center">
         <li class="self-center">
