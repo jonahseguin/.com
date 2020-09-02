@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="flex flex-row flex-wrap justify-center items-center w-full">
+    <div class="flex flex-row flex-wrap items-center w-full">
       <div v-for="moment in moments" v-bind:key="moment" class="m-4 w-20 md:w-48 self-center ml-auto mr-auto">
         <img
             :src="moment"
