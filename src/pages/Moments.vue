@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <div class="flex flex-row flex-wrap items-center w-full">
-      <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 w-20 md:w-48 self-center ml-auto mr-auto" v-for="moment in moments" v-bind:key="moment">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg m-4 w-32 md:w-56 self-center ml-auto mr-auto" v-for="moment in moments" v-bind:key="moment">
         <img :src="moment.url" :alt="moment.desc" class="w-full" />
         <div class="px-4 py-2">
-          <p class="text-purple-300 font-bold text-md text-center">{{ moment.desc }}</p>
+          <p class="text-purple-300 font-bold text-xs md:text-md text-center with-my-woes">{{ moment.desc }}</p>
         </div>
       </div>
     </div>
