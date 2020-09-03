@@ -2,7 +2,7 @@
   <Layout>
     <div class="flex flex-row flex-wrap items-center w-full">
       <div
-        class="max-w-sm rounded-sm overflow-hidden m-4 w-32 md:w-56 self-center ml-auto mr-auto border-4 polaroid"
+        class="polaroid max-w-sm rounded-sm overflow-hidden m-4 w-32 md:w-56 self-center ml-auto mr-auto border-4"
         v-for="moment in moments"
         v-bind:key="moment"
       >
@@ -51,7 +51,6 @@ export default {
 .polaroid {
   @apply bg-black;
   @apply border-black;
-  opacity: 95%;
 }
 
 @media (prefers-color-scheme: dark) {
