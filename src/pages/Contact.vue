@@ -1,7 +1,8 @@
 <template>
   <Layout>
     <div>
-      <p>contact</p>
+      <p class="text-dynamic">UNDER CONSTRUCTION</p>
+      <p class="text-dynamic">:'(</p>
     </div>
   </Layout>
 </template>

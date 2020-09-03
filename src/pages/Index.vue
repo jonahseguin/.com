@@ -17,16 +17,16 @@
         <div class="flex-shrink flex-grow self-center">
           <p>
             <strong
-              class="font-bold text-purple-500 text-2xl md:text-4xl border-b-4 border-gray-300 border-dashed"
-            >what's good?</strong>
+              class="font-bold text-purple-500 text-2xl md:text-4xl border-b-4 border-purple-500 border-dashed"
+            >hi.</strong>
           </p>
           <br />
-          <p class="text-gray-700">
-            I'm a {{ age() }}-year-old
+          <p class="text-dynamic">
+            I'm a 
             <span class="text-purple-500">software engineer</span>, <span class="text-purple-500">full-stack web developer</span>, and <span class="text-purple-500">devops engineer</span> from Edmonton, Alberta, Canada.
           </p>
           <br />
-          <p class="text-gray-600">
+          <p class="text-dynamic">
             If you're interested in working with me, I'm usually looking for work: so check out my
             <g-link to="/contact" class="text-purple-500">contact page</g-link>.
           </p>

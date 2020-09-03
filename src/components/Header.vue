@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="bg-gradient-to-r from-purple-900 to-black rounded-lg py-4">
+    <div class="bg-gradient-to-r dynamic-header rounded-lg py-4">
       <h1
-        class="text-purple-200 text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold antialiased text-center tracking-widest with-my-woes"
+        class="dynamic-header-text text-xl md:text-3xl lg:text-4xl xl:text-5xl font-bold antialiased text-center tracking-widest with-my-woes"
       >
         <g-link to="/">jonah seguin</g-link>
       </h1>
@@ -27,7 +27,7 @@ export default {
     return {
       time: new Date().toLocaleTimeString(),
       date: new Date().toLocaleDateString()
-    }
+    };
   },
   mounted() {
     setInterval(() => {
@@ -46,5 +46,25 @@ export default {
   height: 100%;
   background: rgba(191, 85, 236, 0.8);
   @apply rounded-lg;
+}
+
+.dynamic-header {
+  @apply from-purple-600;
+  @apply to-white;
+}
+
+.dynamic-header-text {
+  @apply text-purple-900;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dynamic-header {
+    @apply from-purple-900;
+    @apply to-black;
+  }
+
+  .dynamic-header-text {
+    @apply text-purple-400;
+  }
 }
 </style>

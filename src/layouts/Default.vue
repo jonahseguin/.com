@@ -42,15 +42,32 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  background-color: white;
+}
+
+.text-dynamic {
+  @apply text-gray-700;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+  }
+
+  .text-dynamic {
+    @apply text-white;
+  }
+}
+
 @font-face {
-  font-family: 'WithMyWoes';
+  font-family: "WithMyWoes";
   src: url("../assets/WithMyWoes.ttf");
   font-weight: normal;
 }
 
 .with-my-woes {
-  font-family: 'WithMyWoes', sans-serif;
+  font-family: "WithMyWoes", sans-serif;
   text-transform: uppercase;
 }
-
 </style>
