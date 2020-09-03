@@ -1,7 +1,7 @@
 module.exports = {
     siteName: 'Jonah Seguin',
     siteUrl: 'https://jonahseguin.com',
-    siteDescription: "Hi, I'm a 19-year-old Software Engineer from Edmonton, Alberta, Canada.",
+    siteDescription: "19-year-old Software Engineer from Edmonton, Alberta, Canada.",
 
     plugins: [
         {
