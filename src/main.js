@@ -21,6 +21,23 @@ export default function (Vue, { router, head, isClient }) {
     name: 'copyright',
     content: 'JonahSeguin.com is copyright (c) 2020 Jonah Seguin'
   });
+  head.meta.push({
+    name: 'google',
+    content: 'nositelinkssearchbox'
+  });
+  head.meta.push({
+    name: 'author',
+    content: 'Jonah Seguin'
+  });
+  head.meta.push({
+    name: 'owner',
+    content: 'Jonah Seguin'
+  });
+  head.meta.push({
+    name: 'apple-mobile-web-app-status-bar-style',
+    content: 'black'
+  });
+  
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
