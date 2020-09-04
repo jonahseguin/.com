@@ -37,6 +37,58 @@ export default function (Vue, { router, head, isClient }) {
     name: 'apple-mobile-web-app-status-bar-style',
     content: 'black'
   });
+  head.meta.push({
+    name: 'og:title',
+    content: 'Jonah Seguin'
+  });
+  head.meta.push({
+    name: 'og:url',
+    content: 'https://jonahseguin.com'
+  });
+  head.meta.push({
+    name: 'og:image',
+    content: 'https://jonahseguin.com/purple/jonah_asap.jpg'
+  });
+  head.meta.push({
+    name: 'og:site_name',
+    content: 'Jonah Seguin'
+  });
+  head.meta.push({
+    name: 'og:description',
+    content: 'Software Engineer from Edmonton, Alberta, Canada.'
+  });
+  head.meta.push({
+    name: 'og:email',
+    content: 'me@jonahseguin.com'
+  });
+  head.meta.push({
+    name: 'twitter:card',
+    content: 'summary'
+  });
+  head.meta.push({
+    name: 'twitter:site',
+    content: '@jonahseguin'
+  });
+  head.meta.push({
+    name: 'twitter:title',
+    content: 'Jonah Seguin'
+  });
+  head.meta.push({
+    name: 'twitter:description',
+    content: 'Software Engineer from Edmonton, Alberta, Canada.'
+  });
+  head.meta.push({
+    name: 'twitter:creator',
+    content: '@jonahseguin'
+  });
+  head.meta.push({
+    name: 'twitter:image',
+    content: 'https://jonahseguin.com/purple/jonah_asap.jpg'
+  });
+  head.meta.push({
+    name: '',
+    content: ''
+  });
   
 
   // Set default layout as a global component

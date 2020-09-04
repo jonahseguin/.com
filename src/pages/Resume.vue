@@ -274,7 +274,7 @@
           <div class="flex flex-wrap flex-row my-6 py-6 justify-between">
             <div class="mr-6 mb-6 md:mb-4">
               <h3 class="font-bold text-xl text-purple-600">Tsanga Inc.</h3>
-              <h3 class="font-semibold text-xl text-purple-400">Founder, CEO, Software Engineer</h3>
+              <h3 class="font-semibold text-xl text-purple-400">Co-Founder, CEO, Software Engineer</h3>
               <p class="font-medium text-lg text-dynamic">January 2020 - Present</p>
               <p class="font-light text-md text-dynamic">alex@tsanga.net</p>
             </div>
@@ -299,7 +299,7 @@
                   <span class="text-purple-400">Redis</span> and
                   <span class="text-purple-400">MongoDB</span>. This application was designed to be
                   <span class="text-purple-400">stateless</span>, allowing
-                  <span class="text-purple-400">automated vertical scaling</span> in
+                  <span class="text-purple-400">automated horizontal scaling</span> in
                   <span class="text-purple-400">Kubernetes</span> via our infrastructre-as-code with
                   <span class="text-purple-400">Terraform</span>.
                 </li>
