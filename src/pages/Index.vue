@@ -40,6 +40,7 @@
             <span class="text-purple-500">IntelliJ IDEA</span>. (dark themes
             only)
           </p>
+          <br />
           <p class="text-dynamic">
             I'm addicted to
             <span class="text-purple-500">Rocket League</span> and have a strong
@@ -55,6 +56,7 @@
             <span class="text-purple-500">Serverless</span>, and other cool
             technology.
           </p>
+          <br />
           <p class="text-dynamic">
             I enjoy writing websites in
             <span class="text-purple-500">Vue.js</span> using static/ssr/spa
