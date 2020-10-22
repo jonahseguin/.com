@@ -2,7 +2,9 @@
   <Layout>
     <div>
       <div class="flex flex-row md:flex-no-wrap flex-wrap">
-        <div class="pb-6 md:pb-0 flex-shrink flex-grow ml-auto mr-auto block md:pr-10">
+        <div
+          class="pb-6 md:pb-0 flex-shrink flex-grow ml-auto mr-auto block md:pr-10"
+        >
           <g-image
             src="~/assets/jonah_matt_couch_bw_purple.jpg"
             width="300"
@@ -18,17 +20,49 @@
           <p>
             <strong
               class="font-bold text-purple-500 text-2xl md:text-4xl border-b-4 border-purple-500 border-dashed"
-            >hi.</strong>
+              >hi.</strong
+            >
           </p>
           <br />
           <p class="text-dynamic">
-            I'm a 
-            <span class="text-purple-500">software engineer</span>, <span class="text-purple-500">full-stack web developer</span>, and <span class="text-purple-500">devops engineer</span> from Edmonton, Alberta, Canada.
+            I'm a
+            <span class="text-purple-500">software engineer</span>,
+            <span class="text-purple-500">full-stack web developer</span>, and
+            <span class="text-purple-500">devops engineer</span> from Edmonton,
+            Alberta, Canada.
           </p>
           <br />
           <p class="text-dynamic">
-            If you're interested in working with me, I'm usually looking for work: so check out my
-            <g-link to="/contact" class="text-purple-500">contact page</g-link>.
+            I main a
+            <span class="text-purple-500">2019 MacBook Pro 16"</span> with
+            <span class="text-purple-500">hyper.sh</span>,
+            <span class="text-purple-500">VSCode</span>, and
+            <span class="text-purple-500">IntelliJ IDEA</span>. (dark themes
+            only)
+          </p>
+          <p class="text-dynamic">
+            I'm addicted to
+            <span class="text-purple-500">Rocket League</span> and have a strong
+            passion for technology. I enjoy designing and developing websites,
+            like this one. <span class="text-purple-500">DevOps</span> is a
+            topic of particular interest for me, and I'm working on expanding my
+            skillset within the field -- I love the concepts of
+            <span class="text-purple-500">automate everything</span> and
+            <span class="text-purple-500">infrastructure-as-code</span> via
+            <span class="text-purple-500">Terraform</span>,
+            <span class="text-purple-500">Docker</span>,
+            <span class="text-purple-500">Kubernetes</span>,
+            <span class="text-purple-500">Serverless</span>, and other cool
+            technology.
+          </p>
+          <p class="text-dynamic">
+            I enjoy writing websites in
+            <span class="text-purple-500">Vue.js</span> using static/ssr/spa
+            frameworks like <span class="text-purple-500">Nuxt.js</span> or
+            JAMstack with <span class="text-purple-500">Gridsome</span>.
+            <span class="text-purple-500">Kotlin</span> is my favourite language
+            right now, and I'm in the process of learning
+            <span class="text-purple-500">Rust</span>.
           </p>
         </div>
       </div>
@@ -40,7 +74,7 @@
 export default {
   name: "Home",
   metaInfo: {
-    title: "Home"
+    title: "Home",
   },
   methods: {
     age: function() {
@@ -55,8 +89,8 @@ export default {
         age--;
       }
       return age;
-    }
-  }
+    },
+  },
 };
 </script>
 <style></style>;
