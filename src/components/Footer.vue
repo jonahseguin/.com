@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto text-center mb-4">
-    <p class="text-purple-300 text-xs">&copy; {{ year }} jonah seguin. don't steal my sh*t.</p>
+    <p class="text-purple-300 text-xs">&copy; {{ year }} jonah seguin.</p>
   </div>
 </template>
 
