@@ -10,7 +10,7 @@
         <div class="flex-1 self-center">
           <p>
             <strong
-              class="font-bold text-jurple-dark text-2xl md:text-4xl border-b-4 border-jurple-dark border-dashed"
+              class="font-bold text-jurple-light text-2xl md:text-4xl border-b-4 border-jurple-med border-dashed"
               >hi.</strong
             >
           </p>

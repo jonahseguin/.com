@@ -81,7 +81,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
+    @apply bg-bluack;
   }
 
   .text-dynamic {
