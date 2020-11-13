@@ -6,13 +6,13 @@
       </div>
       <ul class="my-1 flex flex-col md:flex-row flex-wrap">
         <li class="mx-2">
-          <g-link to="/" class="text-jurple-light font-bold text-sm" exact exact-active-class="text-jurple-dark">home</g-link>
+          <g-link to="/" class="text-jurple-light font-bold text-sm" exact exact-active-class="text-dynamic-active">home</g-link>
         </li>
         <li class="mx-2">
-          <g-link to="/contact" class="text-jurple-light font-bold text-sm" active-class="text-jurple-dark">contact</g-link>
+          <g-link to="/contact" class="text-jurple-light font-bold text-sm" active-class="text-dynamic-active">contact</g-link>
         </li>
         <li class="mx-2">
-          <g-link to="/resume" class="text-jurple-light font-bold text-sm" active-class="text-jurple-dark">resume</g-link>
+          <g-link to="/resume" class="text-jurple-light font-bold text-sm" active-class="text-dynamic-active">resume</g-link>
         </li>
       </ul>
     </nav>
@@ -26,4 +26,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.text-dynamic-active {
+  @apply text-jlack-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-dynamic-active {
+    @apply text-white;
+  }
+}
+
 </style>

@@ -8,9 +8,13 @@
       </h1>
     </div>
     <br />
+    <div class="ml-0 mr-auto">
+    </div>
     <div class="flex justify-between">
       <div class="my-1">
-        <p class="text-jurple-light font-bold antialiased text-xs">{{ time }}</p>
+        <p class="text-jurple-light font-bold antialiased text-xs">
+          {{ time }}
+          </p>
       </div>
       <div class="my-1">
         <p class="text-jurple-light font-bold antialiased text-xs">{{ date }}</p>
@@ -65,7 +69,7 @@ export default {
   }
 
   .dynamic-header-text {
-    @apply text-black;
+    @apply text-jlack-dark;
   }
 }
 </style>

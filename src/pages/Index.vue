@@ -1,29 +1,47 @@
 <template>
   <Layout>
     <div>
-      <div class="flex flex-row md:flex-no-wrap flex-wrap">
+      <div class="flex flex-wrap lg:flex-no-wrap xl:flex-no-wrap">
         <div
-          class="flex-1 pb-20 md:pb-0 flex-grow block md:pr-5 mt-32"
-        >
-          <img src="/profile-jonah.jpeg" alt="jonah" class="align-middle rounded-sm" style="height: 300px; width: 300px;">
+          class="flex-initial p-2 mb-5 md:mb-0 md:mr-5 lg:mt-32 content-center">
+          <img src="/profile-jonah.jpeg" alt="jonah" class="rounded-sm self-center" style="object-fit: cover; max-width: 100%; height: 70%; margin: auto;">
         </div>
-        <div class="flex-1 self-center">
+
+        <div class="flex-1 p-2 self-center">
           <p>
             <strong
-              class="font-bold text-jurple-light text-2xl md:text-4xl border-b-4 border-jurple-med border-dashed"
-              >hi.</strong
+              class="font-bold text-jurple-light text-2xl md:text-4xl border-b-4 border-dynamic border-dashed"
+              >hi, i'm jonah</strong
             >
           </p>
           <br />
           <p class="text-dynamic">
-            I'm a
-            <span class="text-highlight">software engineer</span>,
-            <span class="text-highlight">full-stack web developer</span>, and
-            <span class="text-highlight">devops engineer</span> from Edmonton,
-            Alberta, Canada.
+            i'm an experienced 
+            <span class="text-highlight">software engineer</span> and 
+            <span class="text-highlight">developer</span> 
+            from edmonton, alberta, canada.
           </p>
           <br />
           <p class="text-dynamic">
+            <span class="font-semibold">currently @</span>
+            <br />
+            <ul>
+              <li><a href="//hypixel.net" target="_blank" class="text-highlight no-underline">Hypixel, Inc. </a> <span class="text-xs">developer</span></li>
+              <li><a href="//tsanga.net" target="_blank" class="text-highlight no-underline">Tsanga, Inc. </a> <span class="text-xs">co-founder, ceo</span></li>
+              <li><a href="//whatsthedeal.ca" target="_blank" class="text-highlight no-underline">Whats The Deal? </a> <span class="text-xs">cto</span></li>
+            </ul>
+          </p>
+          <br />
+          <p class="text-dynamic">
+            <span class="font-semibold">previously @</span>
+            <br />
+            <ul>
+              <li><a href="//universalmusic.com" target="_blank" class="text-highlight no-underline">Universal Music Group </a> <span class="text-xs">r&d</span></li>
+              <li><a href="//twitter.com/hylistgames" target="_blank" class="text-highlight no-underline">Hylist Games </a> <span class="text-xs">software engineer</span></li>
+            </ul>
+          </p>
+          <br />
+          <!--<p class="text-dynamic">
             I work on a
             <span class="text-highlight">2019 MacBook Pro 16"</span> with
             <span class="text-highlight">hyper.sh</span>,
@@ -59,7 +77,7 @@
             <span class="text-highlight">Kotlin</span> is my favourite language
             right now, and I'm in the process of learning
             <span class="text-highlight">Rust</span>.
-          </p>
+          </p>-->
         </div>
       </div>
     </div>

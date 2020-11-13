@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-screen items-center justify-center w-screen">
-    <div class="w-3/5 md:w-1/2">
+    <div class="w-4/5 md:w-1/2">
       <!-- Header and navbar -->
       <div class="mt-4 mb-10">
         <Header />
@@ -74,6 +74,10 @@ body {
   @apply text-gray-700;
 }
 
+.border-dynamic {
+  @apply border-gray-700;
+}
+
 .text-highlight {
   @apply text-jurple-med;
   @apply font-medium
@@ -90,6 +94,10 @@ body {
 
   .text-highlight {
     @apply text-jurple-light;
+  }
+
+  .border-dynamic {
+    @apply border-white;
   }
 
 }
