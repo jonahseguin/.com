@@ -35,7 +35,11 @@
             I'm addicted to
             <span class="text-highlight">Rocket League</span> and have a strong
             passion for technology. I enjoy designing and developing websites,
-            like this one. <span class="text-highlight">DevOps</span> is a
+            like this one.
+          </p>
+          <br />
+          <p class="text-dynamic">
+            <span class="text-highlight">DevOps</span> is a
             topic of particular interest for me, and I'm working on expanding my
             skillset within the field.  I love the concepts of
             <span class="text-highlight">automate everything</span> and
