@@ -24,12 +24,11 @@
           </p>
           <br />
           <p class="text-dynamic">
-            I main a
+            I work on a
             <span class="text-highlight">2019 MacBook Pro 16"</span> with
             <span class="text-highlight">hyper.sh</span>,
             <span class="text-highlight">VSCode</span>, and
-            <span class="text-highlight">IntelliJ 6IDEA</span>. (dark themes
-            only)
+            <span class="text-highlight">IntelliJ IDEA</span>.
           </p>
           <br />
           <p class="text-dynamic">
@@ -38,7 +37,7 @@
             passion for technology. I enjoy designing and developing websites,
             like this one. <span class="text-highlight">DevOps</span> is a
             topic of particular interest for me, and I'm working on expanding my
-            skillset within the field -- I love the concepts of
+            skillset within the field.  I love the concepts of
             <span class="text-highlight">automate everything</span> and
             <span class="text-highlight">infrastructure-as-code</span> via
             <span class="text-highlight">Terraform</span>,
