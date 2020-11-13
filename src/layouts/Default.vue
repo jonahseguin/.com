@@ -9,7 +9,11 @@
 
       <!-- Router view / slot -->
       <div class="container p-2">
-        <slot />
+        <transition name="fade" appear>
+          <div>
+            <slot />
+          </div>
+        </transition>
       </div>
 
       <!-- Socials links -->
@@ -42,12 +46,37 @@ export default {
 </script>
 
 <style lang="scss">
+.fade-enter-active {
+  transition: opacity .25s ease-out;
+}
+
+.fade-enter {
+  opacity: 0;
+  transition: opacity .25s ease-out;
+}
+
+.fade-exit {
+  opacity: 0;
+  transition: opacity .25s ease-out;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity .25s ease-out;
+}
+
+
 body {
   background-color: white;
 }
 
 .text-dynamic {
   @apply text-gray-700;
+}
+
+.text-highlight {
+  @apply text-jurple-med;
+  @apply font-medium
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +87,11 @@ body {
   .text-dynamic {
     @apply text-white;
   }
+
+  .text-highlight {
+    @apply text-jurple-light;
+  }
+
 }
 
 @font-face {

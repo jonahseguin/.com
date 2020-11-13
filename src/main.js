@@ -47,7 +47,7 @@ export default function (Vue, { router, head, isClient }) {
   });
   head.meta.push({
     name: 'og:image',
-    content: 'https://jonahseguin.com/purple/jonah_asap.jpg'
+    content: 'https://jonahseguin.com/profile-jonah.jpeg'
   });
   head.meta.push({
     name: 'og:site_name',
@@ -83,11 +83,7 @@ export default function (Vue, { router, head, isClient }) {
   });
   head.meta.push({
     name: 'twitter:image',
-    content: 'https://jonahseguin.com/purple/jonah_asap.jpg'
-  });
-  head.meta.push({
-    name: '',
-    content: ''
+    content: 'https://jonahseguin.com/profile-jonah.jpeg'
   });
   
 

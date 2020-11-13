@@ -1,6 +1,7 @@
 <template>
   <div class="mx-auto text-center mb-4">
-    <p class="text-purple-300 text-xs">&copy; {{ year }} jonah seguin.</p>
+    <p class="text-jurple-light text-xs">&copy; {{ year }}</p>
+    <p class="text-jurple-light text-xs">developed by jonah seguin</p>
   </div>
 </template>
 
