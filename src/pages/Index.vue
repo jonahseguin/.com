@@ -26,9 +26,7 @@
             <span class="font-semibold">currently @</span>
             <br />
             <ul>
-              <li><a href="//hypixel.net" target="_blank" class="text-highlight no-underline">Hypixel, Inc. </a> <span class="text-xs">developer</span></li>
               <li><a href="//tsanga.net" target="_blank" class="text-highlight no-underline">Tsanga, Inc. </a> <span class="text-xs">co-founder, ceo</span></li>
-              <li><a href="//whatsthedeal.ca" target="_blank" class="text-highlight no-underline">Whats The Deal? </a> <span class="text-xs">cto</span></li>
             </ul>
           </p>
           <br />
@@ -36,6 +34,7 @@
             <span class="font-semibold">previously @</span>
             <br />
             <ul>
+              <li><a href="//hypixel.net" target="_blank" class="text-highlight no-underline">Hypixel, Inc. </a> <span class="text-xs">developer</span></li>
               <li><a href="//universalmusic.com" target="_blank" class="text-highlight no-underline">Universal Music Group </a> <span class="text-xs">r&d</span></li>
               <li><a href="//twitter.com/hylistgames" target="_blank" class="text-highlight no-underline">Hylist Games </a> <span class="text-xs">software engineer</span></li>
             </ul>

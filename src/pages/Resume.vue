@@ -14,7 +14,10 @@
 				<div>
           <!-- Languages -->
 					<div class="flex flex-wrap justify-start">
-						<div class="p-2">
+			<div class="p-2">
+              <span class="inline-block bg-jurple-dark rounded-full px-3 py-1 text-sm font-semibold text-white">Rust</span>
+            </div>
+			<div class="p-2">
               <span class="inline-block bg-jurple-dark rounded-full px-3 py-1 text-sm font-semibold text-white">Java</span>
             </div>
             <div class="p-2">
@@ -195,6 +198,41 @@
 
 				<!-- Section body -->
 				<div>
+
+					<!-- Job Section -->
+					<div class="flex flex-wrap flex-row my-6 py-6 justify-between">
+						<div class="mr-6 mb-6 md:mb-4">
+							<h3 class="font-bold text-xl text-jink">
+								Hypixel Inc.
+							</h3>
+							<h3 class="font-semibold text-xl text-highlight">
+								Developer
+							</h3>
+							<p class="font-medium text-lg text-dynamic">
+								November 2020 - November 2021
+							</p>
+							<!--<p class="font-light text-md text-dynamic">
+								email
+							</p>-->
+						</div>
+						<div class="ml-6 w-1/2">
+							<ul class="list-disc">
+								<li class="text-dynamic text-md">
+									Hypixel is the <span class="text-highlight">world's largest Minecraft (Java Edition) server</span>, with peaks of over <span class="text-highlight">200,000</span> concurrent players online during my time working there.
+								</li>
+								<li class="text-dynamic text-md">
+									I wrote code primarily for the <span class="text-highlight">SkyBlock</span> game: from content, to bug fixes, item duplication patches, and internal tools.
+									SkyBlock is a large MMO-style game within Minecraft itself, pushing the boundaries of what is possible within the game.  Players have their own islands, but also community islands, dungeons, quests, a massive economy, and more.
+								</li>
+								<li class="text-dynamic text-md">
+									<span class="text-highlight">Designed, developed, tested and deployed</span> a brand new system called "<span class="text-highlight">Storage</span>" for "backpacks", which was an extremely problematic item system plaguing the SkyBlock game, 
+									causing mass <span class="text-highlight">duplication</span> glitches and contributing greatly to negatively impacting the game's economy.
+									The new and improved system <span class="text-highlight">proved effective</span> in entirely removing any duplication glitches resulting from the former backpacks system.
+								</li>
+							</ul>
+						</div>
+					</div>
+
 					<!-- Job Section -->
 					<div class="flex flex-wrap flex-row my-6 py-6 justify-between">
 						<div class="mr-6 mb-6 md:mb-4">
