@@ -202,6 +202,53 @@
 					<!-- Job Section -->
 					<div class="flex flex-wrap flex-row my-6 py-6 justify-between">
 						<div class="mr-6 mb-6 md:mb-4">
+							<h3 class="font-bold text-xl text-jink">Tsanga Inc.</h3>
+							<h3 class="font-semibold text-xl text-highlight">
+								Co-Founder, CEO, Software Engineer
+							</h3>
+							<p class="font-medium text-lg text-dynamic">
+								January 2020 - Present
+							</p>
+							<p class="font-light text-md text-dynamic">alex@tsanga.net</p>
+						</div>
+						<div class="ml-6 w-1/2">
+							<ul class="list-disc">
+								<li class="text-dynamic text-md mb-2">
+									Designed and implemented a fully-automated multi-environment
+									<span class="text-highlight">DevOps pipeline</span> that automatically built and deployed
+									<span class="text-highlight">microservices</span> to an environment-scoped
+									<span class="text-highlight">Kubernetes</span> cluster.
+								</li>
+								<li class="text-dynamic text-md mb-2">
+									Developed a web-based SaaS called
+									<span class="text-highlight">Toad.app / Jibe.tv</span>
+									allowing consumers to control a virtual browser within their browser, providing a richer Netflix-party
+									type experience allowing friends to consume media online together.
+								</li>
+								<li class="text-dynamic text-md mb-2">
+									Developed and documented
+									<strong>Toad</strong>'s back-end <span class="text-highlight">RESTful</span> API in
+									<span class="text-highlight">Kotlin</span> using <span class="text-highlight">ktor</span>, backed by
+									<span class="text-highlight">Redis</span> and <span class="text-highlight">MongoDB</span>. This
+									application was designed to be <span class="text-highlight">stateless</span>, allowing
+									<span class="text-highlight">automated horizontal scaling</span>
+									in <span class="text-highlight">Kubernetes</span> via our infrastructre-as-code with
+									<span class="text-highlight">Terraform</span>.
+								</li>
+								<li class="text-dynamic text-md mb-2">
+									Designed and developed an
+									<span class="text-highlight">OpenAPI/Swagger</span>
+									specification for <strong>nectar</strong>, a <span class="text-highlight">RESTful</span> API allowing
+									for automating and managing game server deployment and scaling via
+									<span class="text-highlight">Docker</span> and <span class="text-highlight">Kubernetes</span>.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Job Section -->
+					<div class="flex flex-wrap flex-row my-6 py-6 justify-between">
+						<div class="mr-6 mb-6 md:mb-4">
 							<h3 class="font-bold text-xl text-jink">
 								Hypixel Inc.
 							</h3>
@@ -243,7 +290,7 @@
 								Software Engineer
 							</h3>
 							<p class="font-medium text-lg text-dynamic">
-								August 2020 - Present
+								August 2020 - December 2020
 							</p>
 							<p class="font-light text-md text-dynamic">
 								michael.dean@umusic.com
@@ -264,53 +311,6 @@
 									<span class="text-highlight">Node.js</span> with <span class="text-highlight">Express.js</span> for
 									<strong>SongVault</strong>, utilizing <span class="text-highlight">PostgreSQL</span> via
 									<span class="text-highlight">Sequelize</span>.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Job Section -->
-					<div class="flex flex-wrap flex-row my-6 py-6 justify-between">
-						<div class="mr-6 mb-6 md:mb-4">
-							<h3 class="font-bold text-xl text-jink">Tsanga Inc.</h3>
-							<h3 class="font-semibold text-xl text-highlight">
-								Co-Founder, CEO, Software Engineer
-							</h3>
-							<p class="font-medium text-lg text-dynamic">
-								January 2020 - Present
-							</p>
-							<p class="font-light text-md text-dynamic">alex@tsanga.net</p>
-						</div>
-						<div class="ml-6 w-1/2">
-							<ul class="list-disc">
-								<li class="text-dynamic text-md mb-2">
-									Designed and implemented a fully-automated multi-environment
-									<span class="text-highlight">DevOps pipeline</span> that automatically built and deployed
-									<span class="text-highlight">microservices</span> to an environment-scoped
-									<span class="text-highlight">Kubernetes</span> cluster.
-								</li>
-								<li class="text-dynamic text-md mb-2">
-									Developed a web-based SaaS called
-									<span class="text-highlight">Toad.app / Jibe.tv</span>
-									allowing consumers to control a virtual browser within their browser, providing a richer Netflix-party
-									type experience allowing friends to consume media online together.
-								</li>
-								<li class="text-dynamic text-md mb-2">
-									Developed and documented
-									<strong>Toad</strong>'s back-end <span class="text-highlight">RESTful</span> API in
-									<span class="text-highlight">Kotlin</span> using <span class="text-highlight">ktor</span>, backed by
-									<span class="text-highlight">Redis</span> and <span class="text-highlight">MongoDB</span>. This
-									application was designed to be <span class="text-highlight">stateless</span>, allowing
-									<span class="text-highlight">automated horizontal scaling</span>
-									in <span class="text-highlight">Kubernetes</span> via our infrastructre-as-code with
-									<span class="text-highlight">Terraform</span>.
-								</li>
-								<li class="text-dynamic text-md mb-2">
-									Designed and developed an
-									<span class="text-highlight">OpenAPI/Swagger</span>
-									specification for <strong>nectar</strong>, a <span class="text-highlight">RESTful</span> API allowing
-									for automating and managing game server deployment and scaling via
-									<span class="text-highlight">Docker</span> and <span class="text-highlight">Kubernetes</span>.
 								</li>
 							</ul>
 						</div>
