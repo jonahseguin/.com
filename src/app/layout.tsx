@@ -1,3 +1,5 @@
+import { Footer } from "@/components/footer";
+import { Nav } from "@/components/nav";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
@@ -17,10 +19,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} min-h-screen bg-background font-sans antialiased`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-screen h-screen container font-sans p-8 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+        <ThemeProvider
+          defaultTheme="system"
+          forcedTheme="system"
+          attribute="class"
+        >
+          <Nav />
+          <div className="flex flex-col border w-full aspect-square h-auto">
+            {children}
+          </div>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
