@@ -10,11 +10,11 @@ export const Footer = () => {
             target="_blank"
             className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
           >
-            source code
+            [source code]
           </Link>
         </li>
       </ul>
-      <ul className="flex flex-row gap-3 items-center justify-end">
+      <ul className="flex flex-row gap-6 items-center justify-end">
         <li>
           <Link
             href="https://github.com/jonahseguin"

@@ -7,27 +7,19 @@ export const Nav = () => {
         <li>
           <Link
             href="/"
-            className="font-mono text-sm font-normal tracking-tight text-primary uppercase"
+            className="font-mono text-sm font-medium tracking-wide text-primary lowercase"
           >
-            JONAH SEGUIN
+            jonah seguin
           </Link>
         </li>
       </ul>
-      <ul className="flex flex-row gap-3 items-center justify-end">
+      <ul className="flex flex-row gap-6 items-center justify-end">
         <li>
           <Link
-            href="/about"
+            href="/resume"
             className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
           >
-            about
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/projects"
-            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
-          >
-            projects
+            résumé
           </Link>
         </li>
         <li>

@@ -19,16 +19,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-screen h-screen container font-sans p-8 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-screen md:h-screen container font-sans p-8 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
       >
         <ThemeProvider
           defaultTheme="system"
-          forcedTheme="system"
+          forcedTheme="dark"
           attribute="class"
         >
           <Nav />
-          <div className="flex flex-col border w-full aspect-square h-auto">
-            {children}
+          <div className="border w-full h-full overflow-hidden p-3">
+            <div className="flex flex-col h-full w-full overflow-hidden">
+              {children}
+            </div>
           </div>
           <Footer />
         </ThemeProvider>
