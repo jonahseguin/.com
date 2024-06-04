@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col gap-3 w-full h-full">
       <div className="grid grid-rows-3 md:grid-cols-3 md:grid-rows-none w-full place-items-center flex-row items-center gap-3">
         <div className="relative flex text-xs items-center w-full h-full bg-primary text-primary-foreground p-3 text-pretty">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight">
+          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -ml-3">
             what
           </p>
           <Link
@@ -18,12 +18,12 @@ export default function Home() {
           >
             Software Engineer
           </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight">
+          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -mr-3">
             what
           </p>
         </div>
         <div className="relative flex text-xs w-full place-items-center h-full bg-secondary text-secondary-foreground p-3 text-pretty">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight">
+          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -ml-3">
             work
           </p>
           <Link
@@ -33,12 +33,12 @@ export default function Home() {
           >
             Tsanga
           </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight">
+          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -mr-3">
             work
           </p>
         </div>
         <div className="relative flex w-full h-full place-items-center bg-primary text-primary-foreground p-3 text-pretty">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight">
+          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -ml-3">
             live
           </p>
           <Link
@@ -47,7 +47,7 @@ export default function Home() {
           >
             Montrèal
           </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight">
+          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -mr-3">
             live
           </p>
         </div>
@@ -95,12 +95,12 @@ export default function Home() {
         </video>
         <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground  text-primary-foreground">
           <p
-            className={`text-pretty font-medium font-mono text-3xl text-right lowercase`}
+            className={`text-pretty font-medium font-mono text-3xl text-right lowercase ${BesleyFont.className}`}
           >
             i build software for the internet.
           </p>
           <p
-            className={`text-pretty font-medium font-mono text-3xl text-right lowercase`}
+            className={`text-pretty font-medium font-mono text-3xl text-right lowercase ${BesleyFont.className}`}
           >
             check out some of the{" "}
             <Link
