@@ -31,9 +31,7 @@ export default function RootLayout({
           enableColorScheme={true}
         >
           <Nav />
-          <div className="flex-1 border flex flex-col w-full h-full p-3">
-            {children}
-          </div>
+          <div className="flex-1 border w-full h-full p-3">{children}</div>
           <Footer />
         </ThemeProvider>
       </body>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-3 w-full h-full">
       <div className="grid grid-rows-3 md:grid-cols-3 md:grid-rows-none w-full place-items-center flex-row items-center gap-3">
-        <div className="relative flex text-xs items-center w-full h-full bg-primary text-primary-foreground p-3 text-pretty">
+        <div className="relative flex text-xs items-center w-full h-full bg-primary text-primary-foreground p-3 text-pretty duration-700 fade-in animate-in transform slide-in-from-left-full">
           <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -ml-3">
             what
           </p>
@@ -22,7 +22,7 @@ export default function Home() {
             what
           </p>
         </div>
-        <div className="relative flex text-xs w-full place-items-center h-full bg-secondary text-secondary-foreground p-3 text-pretty">
+        <div className="relative flex text-xs w-full place-items-center h-full bg-secondary text-secondary-foreground p-3 text-pretty fade-in duration-700 animate-in transform slide-in-from-top-full">
           <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -ml-3">
             work
           </p>
@@ -37,7 +37,7 @@ export default function Home() {
             work
           </p>
         </div>
-        <div className="relative flex w-full h-full place-items-center bg-primary text-primary-foreground p-3 text-pretty">
+        <div className="relative flex w-full h-full place-items-center bg-muted-foreground text-primary-foreground p-3 text-pretty duration-700 fade-in animate-in transform slide-in-from-right-full">
           <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -ml-3">
             live
           </p>
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
       <div className="grid h-full w-full grid-rows-5 sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:grid-rows-none items-center gap-3">
-        <div className="flex items-center justify-center w-full h-full bg-primary">
+        <div className="flex items-center justify-center w-full h-full">
           <Image
             src="/img/profile.jpg"
             alt="Jonah's Avatar"
@@ -62,7 +62,7 @@ export default function Home() {
             className="h-full w-full object-cover animate-in transform duration-1000 fade-in-0"
           />
         </div>
-        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground">
+        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground duration-700 fade-in animate-in transform slide-in-from-bottom-full">
           <p
             className={`text-pretty font-medium font-mono text-3xl text-left lowercase ${BesleyFont.className}`}
           >
@@ -93,7 +93,7 @@ export default function Home() {
         >
           <source src="img/walking.mp4" />
         </video>
-        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground  text-primary-foreground">
+        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground fade-in text-primary-foreground duration-700 animate-in transform slide-in-from-bottom-full">
           <p
             className={`text-pretty font-medium font-mono text-3xl text-right lowercase ${BesleyFont.className}`}
           >
@@ -111,7 +111,7 @@ export default function Home() {
             </Link>
           </p>
         </div>
-        <div className="flex items-center justify-center w-full h-full bg-primary">
+        <div className="flex items-center justify-center w-full h-full">
           <Image
             src="/img/glock.jpg"
             alt="Jonah's cat, Glock"

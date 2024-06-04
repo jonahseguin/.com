@@ -1,3 +1,14 @@
+import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 import Link from "next/link";
 
 export const Nav = () => {
@@ -13,7 +24,7 @@ export const Nav = () => {
           </Link>
         </li>
       </ul>
-      <ul className="flex flex-row gap-6 items-center justify-end">
+      <ul className="hidden sm:flex flex-row gap-6 items-center justify-end">
         <li>
           <Link
             href="/about"
@@ -47,6 +58,72 @@ export const Nav = () => {
           </Link>
         </li>
       </ul>
+      <MobileDrawer />
     </nav>
+  );
+};
+
+const MobileDrawer = () => {
+  return (
+    <Drawer>
+      <DrawerTrigger asChild>
+        <Button variant={"ghost"} size="sm" className="sm:hidden px-0">
+          menu
+        </Button>
+      </DrawerTrigger>
+      <DrawerContent>
+        <DrawerHeader>
+          <DrawerTitle className="font-mono">jonahseguin.com</DrawerTitle>
+          <DrawerDescription>pages available for navigation</DrawerDescription>
+        </DrawerHeader>
+        <DrawerFooter className="grid grid-cols-2 grid-rows-2 w-full items-center gap-3">
+          <DrawerClose asChild>
+            <Button asChild variant={"outline"} className="font-mono col-span-full">
+              <Link href="/">home</Link>
+            </Button>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Button asChild variant={"outline"} className="font-mono">
+              <Link href="/about">about</Link>
+            </Button>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Button asChild variant={"outline"} className="font-mono">
+              <Link href="/projects">projects</Link>
+            </Button>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Button asChild variant={"outline"} className="font-mono">
+              <Link href="/resume">résumé</Link>
+            </Button>
+          </DrawerClose>
+          <DrawerClose asChild>
+            <Button asChild variant={"outline"} className="font-mono">
+              <Link href="/contact">contact</Link>
+            </Button>
+          </DrawerClose>
+          <Button asChild variant={"outline"} className="font-mono">
+            <Link href="https://github.com/jonahseguin/.com" target="_blank">
+              source
+            </Link>
+          </Button>
+          <Button asChild variant={"outline"} className="font-mono">
+            <Link href="https://github.com/jonahseguin/" target="_blank">
+              github
+            </Link>
+          </Button>
+          <Button asChild variant={"outline"} className="font-mono">
+            <Link href="https://instagram.com/jonahseguin" target="_blank">
+              instagram
+            </Link>
+          </Button>
+          <Button asChild variant={"outline"} className="font-mono">
+            <Link href="https://x.com/jonahseguin" target="_blank">
+              x
+            </Link>
+          </Button>
+        </DrawerFooter>
+      </DrawerContent>
+    </Drawer>
   );
 };
