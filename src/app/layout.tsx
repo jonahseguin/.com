@@ -7,7 +7,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "jonah seguin",
+  title: {
+    default: "jonah seguin",
+    template: "%s | jonah seguin",
+  },
   description: "full-stack software developer from canada",
 };
 
@@ -19,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-screen md:h-screen container font-sans p-8 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-screen md:h-screen container font-sans py-3 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="data-theme"

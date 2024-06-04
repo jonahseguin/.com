@@ -16,6 +16,14 @@ export const Nav = () => {
       <ul className="flex flex-row gap-6 items-center justify-end">
         <li>
           <Link
+            href="/about"
+            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
+          >
+            about
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/resume"
             className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
           >
