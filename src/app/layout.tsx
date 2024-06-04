@@ -22,11 +22,10 @@ export default function RootLayout({
         className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-screen md:h-screen container font-sans p-8 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
       >
         <ThemeProvider
-          enableSystem={true}
-          enableColorScheme={true}
-          defaultTheme="light"
-          storageKey="jonahseguin-theme"
-          attribute="class"
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+          enableColorScheme={false}
         >
           <Nav />
           <div className="border w-full h-full overflow-hidden p-3">
