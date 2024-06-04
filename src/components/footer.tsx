@@ -10,7 +10,7 @@ export const Footer = () => {
             target="_blank"
             className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
           >
-            [source code]
+            source
           </Link>
         </li>
       </ul>

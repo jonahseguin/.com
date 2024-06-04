@@ -7,7 +7,7 @@ export const Nav = () => {
         <li>
           <Link
             href="/"
-            className="font-mono text-sm font-medium tracking-wide text-primary lowercase"
+            className="font-serif text-sm font-extrabold tracking-wide text-primary lowercase"
           >
             jonah seguin
           </Link>
@@ -20,6 +20,14 @@ export const Nav = () => {
             className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
           >
             about
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/projects"
+            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
+          >
+            projects
           </Link>
         </li>
         <li>

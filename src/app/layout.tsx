@@ -22,19 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-screen md:h-screen container font-sans py-3 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-dvh md:h-dvh container font-sans py-3 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="system"
           enableSystem
-          enableColorScheme={false}
+          enableColorScheme={true}
         >
           <Nav />
-          <div className="border w-full h-full overflow-hidden p-3">
-            <div className="flex flex-col h-full w-full overflow-hidden">
-              {children}
-            </div>
+          <div className="flex-1 border flex flex-col w-full h-full p-3">
+            {children}
           </div>
           <Footer />
         </ThemeProvider>
