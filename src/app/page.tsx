@@ -41,7 +41,7 @@ export default function Home() {
             className="h-auto aspect-square w-full object-cover md:h-full"
           />
         </div>
-        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground dark:bg-secondary dark:text-secondary-foreground">
+        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground">
           <p className="text-pretty font-medium font-mono text-2xl text-left lowercase">
             hi.
           </p>
@@ -61,7 +61,7 @@ export default function Home() {
         >
           <source src="img/walking.mp4" />
         </video>
-        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-primary dark:bg-secondary dark:text-secondary-foreground text-primary-foreground">
+        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground dark:bg-secondary dark:text-secondary-foreground text-primary-foreground">
           <p className="text-pretty font-medium font-mono text-2xl text-right lowercase">
             i build pleasant software for the web.
           </p>
