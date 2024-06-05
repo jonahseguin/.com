@@ -62,7 +62,9 @@ export default function RootLayout({
         >
           <div className="w-dvw min-h-dvh md:h-dvh flex flex-col gap-y-1.5 mx-auto px-3">
             <Nav />
-            <div className="flex-1 border w-full h-full p-3">{children}</div>
+            <div className="flex-1 md:border w-full h-full md:p-3">
+              {children}
+            </div>
             <Footer />
           </div>
         </ThemeProvider>

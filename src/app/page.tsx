@@ -52,7 +52,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="grid h-full w-full grid-rows-5 sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:grid-rows-none items-center gap-3">
+      <div className="grid h-full w-full grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 items-center gap-3">
         <div className="flex items-center justify-center w-full h-full">
           <Image
             src="/img/profile.jpg"
@@ -112,7 +112,7 @@ export default function Home() {
             </Link>
           </p>
         </div>
-        <div className="flex items-center justify-center w-full h-full">
+        <div className="hidden lg:flex items-center justify-center w-full h-full">
           <Image
             src="/img/glock.jpg"
             alt="Jonah's cat, Glock"
