@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export const Nav = () => {
   return (
-    <nav className="flex flex-row w-full items-center justify-between gap-6">
+    <nav className="flex flex-row w-full items-center justify-between gap-6 pt-3">
       <ul className="flex flex-row gap-3 items-center">
         <li>
           <Link
@@ -65,7 +65,7 @@ export const Nav = () => {
 
 const MobileDrawer = () => {
   return (
-    <Drawer>
+    <Drawer shouldScaleBackground={false} noBodyStyles={true}>
       <DrawerTrigger asChild>
         <Button variant={"ghost"} size="sm" className="sm:hidden px-0">
           menu
@@ -78,7 +78,11 @@ const MobileDrawer = () => {
         </DrawerHeader>
         <DrawerFooter className="grid grid-cols-2 grid-rows-2 w-full items-center gap-3">
           <DrawerClose asChild>
-            <Button asChild variant={"outline"} className="font-mono col-span-full">
+            <Button
+              asChild
+              variant={"outline"}
+              className="font-mono col-span-full"
+            >
               <Link href="/">home</Link>
             </Button>
           </DrawerClose>

@@ -11,7 +11,37 @@ export const metadata: Metadata = {
     default: "jonah seguin",
     template: "%s | jonah seguin",
   },
-  description: "full-stack software developer from canada",
+  description: "full-stack software developer in montréal",
+  applicationName: "jonahseguin.com",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "jonah seguin",
+    "jonah",
+    "seguin",
+    "software engineer",
+    "canada",
+    "edmonton",
+    "montréal",
+  ],
+  authors: [{ name: "Jonah Seguin", url: "https://jonahseguin.com" }],
+  creator: "Jonah Seguin",
+  publisher: "Jonah Seguin",
+  openGraph: {
+    title: "jonah seguin",
+    description: "full-stack software engineer in montréal",
+    url: "https://jonahseguin.com",
+    siteName: "Next.js",
+    images: [
+      {
+        url: "https://jonahseguin.com/og.jpg", // Must be an absolute URL
+        width: 410,
+        height: 410,
+        alt: "jonah seguin",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -22,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-screen min-h-dvh md:h-dvh container font-sans py-3 antialiased gap-y-1.5 flex flex-col items-center justify-center bg-background text-foreground`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh font-sans container antialiased gap-y-1.5 bg-background text-foreground flex flex-col`}
       >
         <ThemeProvider
           attribute="data-theme"

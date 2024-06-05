@@ -60,6 +60,7 @@ export default function Home() {
             height="1283"
             width="1436"
             className="h-full w-full object-cover animate-in transform duration-1000 fade-in-0"
+            priority
           />
         </div>
         <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground duration-700 fade-in animate-in transform slide-in-from-bottom-full">
@@ -117,6 +118,7 @@ export default function Home() {
             alt="Jonah's cat, Glock"
             height="1284"
             width="1645"
+            priority
             className="h-full w-full object-cover animate-in transform duration-1000 fade-in-0"
           />
         </div>
