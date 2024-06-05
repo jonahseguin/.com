@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "jonah seguin",
     description: "full-stack software engineer in montréal",
     url: "https://jonahseguin.com",
-    siteName: "Next.js",
+    siteName: "jonah seguin",
     images: [
       {
         url: "https://jonahseguin.com/og.jpg", // Must be an absolute URL
@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh font-sans container antialiased gap-y-1.5 bg-background text-foreground flex flex-col`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="data-theme"
@@ -60,9 +60,11 @@ export default function RootLayout({
           enableSystem
           enableColorScheme={true}
         >
-          <Nav />
-          <div className="flex-1 border w-full h-full p-3">{children}</div>
-          <Footer />
+          <div className="w-dvw min-h-dvh md:h-dvh flex flex-col gap-y-1.5 mx-auto px-3">
+            <Nav />
+            <div className="flex-1 border w-full h-full p-3">{children}</div>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>

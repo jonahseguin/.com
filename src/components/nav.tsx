@@ -1,15 +1,17 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { FC } from "react";
 
 export const Nav = () => {
   return (
@@ -25,109 +27,103 @@ export const Nav = () => {
         </li>
       </ul>
       <ul className="hidden sm:flex flex-row gap-6 items-center justify-end">
-        <li>
-          <Link
-            href="/about"
-            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
-          >
-            about
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/projects"
-            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
-          >
-            projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/resume"
-            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
-          >
-            résumé
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/contact"
-            className="font-mono text-xs font-normal tracking-tight text-primary lowercase"
-          >
-            contact
-          </Link>
-        </li>
+        <NavItem href="/about" label="about" />
+        <NavItem href="/projects" label="projects" />
+        <NavItem href="/resume" label="résumé" />
+        <NavItem href="/contact" label="contact" />
       </ul>
       <MobileDrawer />
     </nav>
   );
 };
 
+const NavItem: FC<{ href: string; label: string }> = ({ href, label }) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+  return (
+    <li>
+      <Link
+        href={href}
+        className={cn(
+          "font-mono text-xs font-normal tracking-tight text-primary lowercase transition-all",
+          isActive && "font-semibold underline underline-offset-4"
+        )}
+      >
+        {label}
+      </Link>
+    </li>
+  );
+};
+
 const MobileDrawer = () => {
   return (
-    <Drawer shouldScaleBackground={false} noBodyStyles={true}>
+    <Drawer>
       <DrawerTrigger asChild>
-        <Button variant={"ghost"} size="sm" className="sm:hidden px-0">
+        <Button
+          variant={"ghost"}
+          size="sm"
+          className="sm:hidden px-0 font-mono text-xs font-normal tracking-tight"
+        >
           menu
         </Button>
       </DrawerTrigger>
-      <DrawerContent>
-        <DrawerHeader>
-          <DrawerTitle className="font-mono">jonahseguin.com</DrawerTitle>
-          <DrawerDescription>pages available for navigation</DrawerDescription>
-        </DrawerHeader>
-        <DrawerFooter className="grid grid-cols-2 grid-rows-2 w-full items-center gap-3">
-          <DrawerClose asChild>
-            <Button
-              asChild
-              variant={"outline"}
-              className="font-mono col-span-full"
-            >
-              <Link href="/">home</Link>
-            </Button>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <Button asChild variant={"outline"} className="font-mono">
-              <Link href="/about">about</Link>
-            </Button>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <Button asChild variant={"outline"} className="font-mono">
-              <Link href="/projects">projects</Link>
-            </Button>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <Button asChild variant={"outline"} className="font-mono">
-              <Link href="/resume">résumé</Link>
-            </Button>
-          </DrawerClose>
-          <DrawerClose asChild>
-            <Button asChild variant={"outline"} className="font-mono">
-              <Link href="/contact">contact</Link>
-            </Button>
-          </DrawerClose>
-          <Button asChild variant={"outline"} className="font-mono">
-            <Link href="https://github.com/jonahseguin/.com" target="_blank">
-              source
-            </Link>
-          </Button>
-          <Button asChild variant={"outline"} className="font-mono">
-            <Link href="https://github.com/jonahseguin/" target="_blank">
-              github
-            </Link>
-          </Button>
-          <Button asChild variant={"outline"} className="font-mono">
-            <Link href="https://instagram.com/jonahseguin" target="_blank">
-              instagram
-            </Link>
-          </Button>
-          <Button asChild variant={"outline"} className="font-mono">
-            <Link href="https://x.com/jonahseguin" target="_blank">
-              x
-            </Link>
-          </Button>
+      <DrawerContent className="px-3 w-full">
+        <DrawerFooter className="flex flex-col w-full justify-end items-end gap-6">
+          <DrawerNavItem href="/" label="home" />
+          <DrawerNavItem href="/about" label="about" />
+          <DrawerNavItem href="/projects" label="projects" />
+          <DrawerNavItem href="/resume" label="résumé" />
+          <DrawerNavItem href="/contact" label="contact" />
+          <DrawerNavItem
+            external={true}
+            href="https://github.com/jonahseguin/.com"
+            label="source"
+          />
+          <DrawerNavItem
+            external={true}
+            href="https://github.com/jonahseguin"
+            label="github"
+          />
+          <DrawerNavItem
+            external={true}
+            href="https://instagram.com/jonahseguin"
+            label="instagram"
+          />
+          <DrawerNavItem
+            external={true}
+            href="https://x.com/jonahseguin"
+            label="x"
+          />
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
   );
+};
+
+const DrawerNavItem: FC<{
+  href: string;
+  label: string;
+  external?: boolean;
+}> = ({ href, label, external = false }) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
+  const item = (
+    <Link
+      href={href}
+      target={external ? "_blank" : undefined}
+      className={cn(
+        "float-right text-right text-xl font-medium font-mono transition-all",
+        isActive && "underline underline-offset-4 font-semibold"
+      )}
+    >
+      {label}
+    </Link>
+  );
+
+  if (external) {
+    return item;
+  }
+
+  return <DrawerClose asChild>{item}</DrawerClose>;
 };
