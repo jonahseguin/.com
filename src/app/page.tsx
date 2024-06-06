@@ -8,12 +8,12 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-3 w-full h-full">
       <div className="grid grid-rows-3 md:grid-cols-3 md:grid-rows-none w-full place-items-center flex-row items-center gap-3">
-        <div className="relative flex text-xs items-center w-full h-full bg-primary text-primary-foreground p-3 text-pretty duration-700 fade-in animate-in transform slide-in-from-left-full">
+        <div className="relative flex text-xs items-center w-full h-full bg-primary text-primary-foreground p-3 text-pretty duration-500 fade-in animate-in transform slide-in-from-top-full md:slide-in-from-left-full">
           <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -ml-3">
             what
           </p>
           <Link
-            className="font-normal font-sans text-xl lg:text-3xl uppercase text-center w-full"
+            className="font-medium font-serif text-xl lg:text-3xl uppercase text-center w-full"
             href="/resume"
           >
             Software Engineer
@@ -22,27 +22,12 @@ export default function Home() {
             what
           </p>
         </div>
-        <div className="relative flex text-xs w-full place-items-center h-full bg-secondary text-secondary-foreground p-3 text-pretty fade-in duration-700 animate-in transform slide-in-from-top-full">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -ml-3">
-            work
-          </p>
-          <Link
-            className="font-extralight font-mono text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center"
-            href="https://tsanga.net"
-            target="_blank"
-          >
-            Tsanga
-          </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -mr-3">
-            work
-          </p>
-        </div>
-        <div className="relative flex w-full h-full place-items-center bg-muted-foreground text-primary-foreground p-3 text-pretty duration-700 fade-in animate-in transform slide-in-from-right-full">
+        <div className="relative flex w-full h-full place-items-center bg-muted-foreground text-primary-foreground p-3 text-pretty duration-500 fade-in animate-in transform slide-in-from-right-full">
           <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-secondary tracking-tight -ml-3">
             live
           </p>
           <Link
-            className="font-extralight font-serif text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center"
+            className="font-medium font-serif text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center"
             href="/about"
           >
             Montrèal
@@ -51,27 +36,41 @@ export default function Home() {
             live
           </p>
         </div>
+        <div className="relative flex text-xs w-full place-items-center h-full bg-secondary text-secondary-foreground p-3 text-pretty fade-in duration-500 animate-in transform slide-in-from-left-full md:slide-in-from-top-full">
+          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -ml-3">
+            work
+          </p>
+          <Link
+            className="font-medium font-serif text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center"
+            href="/contact"
+          >
+            HIRE ME
+          </Link>
+          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -mr-3">
+            work
+          </p>
+        </div>
       </div>
-      <div className="grid h-full w-full grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 items-center gap-3">
+      <div className="grid h-full w-full grid-rows-2 grid-cols-2 md:grid-rows-none md:grid-cols-4 lg:grid-cols-5 items-center gap-3">
         <div className="flex items-center justify-center w-full h-full">
           <Image
-            src="/img/profile.jpg"
-            alt="Jonah's Avatar"
-            height="1283"
-            width="1436"
-            className="h-full w-full object-cover animate-in transform duration-1000 fade-in-0"
+            src="/img/glock.jpg"
+            alt="Jonah's cat, Glock"
+            height="1284"
+            width="1645"
             priority
+            className="h-full w-full object-cover animate-in transform duration-500 fade-in-0 slide-in-from-left-full"
           />
         </div>
-        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground duration-700 fade-in animate-in transform slide-in-from-bottom-full">
+        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 bg-primary text-primary-foreground duration-500 fade-in animate-in transform slide-in-from-bottom-full">
           <p
-            className={`text-pretty font-medium font-mono text-3xl text-left lowercase ${BesleyFont.className}`}
+            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-left lowercase ${BesleyFont.className}`}
           >
             hi. <br /> i&apos;m jonah, a full-stack software engineer from
             canada.
           </p>
           <p
-            className={`text-pretty font-medium font-mono text-3xl text-left lowercase ${BesleyFont.className}`}
+            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-left lowercase ${BesleyFont.className}`}
           >
             learn more <br />
             <Link
@@ -90,18 +89,19 @@ export default function Home() {
           disablePictureInPicture
           width="1440"
           height="1434"
-          className="h-full w-full object-cover animate-in transform duration-1000 fade-in-0"
+          className="h-full w-full object-cover animate-in transform duration-500 fade-in"
         >
           <source src="img/walking.mp4" />
         </video>
-        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground fade-in text-primary-foreground duration-700 animate-in transform slide-in-from-bottom-full">
+
+        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground fade-in text-primary-foreground duration-500 animate-in transform slide-in-from-bottom-full">
           <p
-            className={`text-pretty font-medium font-mono text-3xl text-right lowercase ${BesleyFont.className}`}
+            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-right lowercase ${BesleyFont.className}`}
           >
             i build software for the internet.
           </p>
           <p
-            className={`text-pretty font-medium font-mono text-3xl text-right lowercase ${BesleyFont.className}`}
+            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-right lowercase ${BesleyFont.className}`}
           >
             check out some of the{" "}
             <Link
@@ -114,12 +114,12 @@ export default function Home() {
         </div>
         <div className="hidden lg:flex items-center justify-center w-full h-full">
           <Image
-            src="/img/glock.jpg"
-            alt="Jonah's cat, Glock"
-            height="1284"
-            width="1645"
+            src="/img/selfie-close.jpg"
+            alt="Jonah's Avatar"
+            height="623"
+            width="1337"
+            className="h-full w-full object-cover animate-in transform duration-500 fade-in-0 slide-in-from-right-full"
             priority
-            className="h-full w-full object-cover animate-in transform duration-1000 fade-in-0"
           />
         </div>
       </div>

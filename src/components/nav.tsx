@@ -20,7 +20,7 @@ export const Nav = () => {
         <li>
           <Link
             href="/"
-            className="font-serif text-sm font-extrabold tracking-wide text-primary lowercase"
+            className="font-serif text-sm font-extrabold tracking-wide text-primary lowercase leading-none"
           >
             jonah seguin
           </Link>
@@ -60,40 +60,59 @@ const MobileDrawer = () => {
     <Drawer>
       <DrawerTrigger asChild>
         <Button
-          variant={"ghost"}
-          size="sm"
-          className="sm:hidden px-0 font-mono text-xs font-normal tracking-tight"
+          variant={"outline"}
+          size="iconXs"
+          className="sm:hidden font-mono text-xs font-normal tracking-tight"
         >
-          menu
+          <span className="sr-only">navigation menu</span>
+          <svg
+            data-testid="geist-icon"
+            height="16"
+            stroke-linejoin="round"
+            viewBox="0 0 16 16"
+            width="16"
+            style={{ color: "currentcolor" }}
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.75 4H1V5.5H1.75H14.25H15V4H14.25H1.75ZM1.75 10.5H1V12H1.75H14.25H15V10.5H14.25H1.75Z"
+              fill="currentColor"
+            ></path>
+          </svg>
         </Button>
       </DrawerTrigger>
       <DrawerContent className="px-3 w-full">
-        <DrawerFooter className="flex flex-col w-full justify-end items-end gap-6">
-          <DrawerNavItem href="/" label="home" />
-          <DrawerNavItem href="/about" label="about" />
-          <DrawerNavItem href="/projects" label="projects" />
-          <DrawerNavItem href="/resume" label="résumé" />
-          <DrawerNavItem href="/contact" label="contact" />
-          <DrawerNavItem
-            external={true}
-            href="https://github.com/jonahseguin/.com"
-            label="source"
-          />
-          <DrawerNavItem
-            external={true}
-            href="https://github.com/jonahseguin"
-            label="github"
-          />
-          <DrawerNavItem
-            external={true}
-            href="https://instagram.com/jonahseguin"
-            label="instagram"
-          />
-          <DrawerNavItem
-            external={true}
-            href="https://x.com/jonahseguin"
-            label="x"
-          />
+        <DrawerFooter className="flex flex-row h-full w-full justify-between items-start gap-6">
+          <div className="flex flex-col w-full gap-12 items-start justify-start">
+            <DrawerNavItem
+              external={true}
+              href="https://github.com/jonahseguin/.com"
+              label="source"
+            />
+            <DrawerNavItem
+              external={true}
+              href="https://github.com/jonahseguin"
+              label="github"
+            />
+            <DrawerNavItem
+              external={true}
+              href="https://instagram.com/jonahseguin"
+              label="instagram"
+            />
+            <DrawerNavItem
+              external={true}
+              href="https://x.com/jonahseguin"
+              label="x"
+            />
+          </div>
+          <div className="flex flex-col w-full gap-12 items-end justify-end">
+            <DrawerNavItem href="/" label="home" />
+            <DrawerNavItem href="/about" label="about" />
+            <DrawerNavItem href="/projects" label="projects" />
+            <DrawerNavItem href="/resume" label="résumé" />
+            <DrawerNavItem href="/contact" label="contact" />
+          </div>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>

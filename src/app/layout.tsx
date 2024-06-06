@@ -60,7 +60,7 @@ export default function RootLayout({
           enableSystem
           enableColorScheme={true}
         >
-          <div className="w-dvw min-h-dvh md:h-dvh flex flex-col gap-y-1.5 mx-auto px-3">
+          <div className="w-dvw min-h-dvh md:h-dvh flex flex-col gap-y-3 mx-auto px-6">
             <Nav />
             <div className="flex-1 md:border w-full h-full md:p-3">
               {children}
