@@ -28,20 +28,25 @@ export const Nav = () => {
       </ul>
       <ul className="hidden sm:flex flex-row gap-6 items-center justify-end">
         <NavItem href="/projects" label="projects" />
-        <NavItem href="/resume" label="résumé" />
         <NavItem href="/contact" label="contact" />
+        <NavItem href="/resume_jonah_seguin.pdf" external label="résumé" />
       </ul>
       <MobileDrawer />
     </nav>
   );
 };
 
-const NavItem: FC<{ href: string; label: string }> = ({ href, label }) => {
+const NavItem: FC<{ href: string; label: string; external?: boolean }> = ({
+  href,
+  label,
+  external = false,
+}) => {
   const pathname = usePathname();
   const isActive = pathname === href;
   return (
     <li>
       <Link
+        target={external ? "_blank" : undefined}
         href={href}
         className={cn(
           "font-mono text-xs font-normal tracking-tight text-primary lowercase transition-all",
@@ -108,8 +113,12 @@ const MobileDrawer = () => {
           <div className="flex flex-col w-full gap-12 items-end justify-end">
             <DrawerNavItem href="/" label="home" />
             <DrawerNavItem href="/projects" label="projects" />
-            <DrawerNavItem href="/resume" label="résumé" />
             <DrawerNavItem href="/contact" label="contact" />
+            <DrawerNavItem
+              href="/resume_jonah_seguin.pdf"
+              external={true}
+              label="résumé"
+            />
           </div>
         </DrawerFooter>
       </DrawerContent>

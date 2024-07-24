@@ -1,3 +1,4 @@
+import { GithubContributionsGraph } from "@/components/github";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
@@ -5,10 +6,15 @@ import { PropsWithChildren } from "react";
 export default function ProjectsPage() {
   return (
     <div className="flex flex-col w-full h-full gap-3">
+      <div className="flex flex-row items-center justify-center w-full font-mono border p-3 bg-primary text-primary-foreground">
+        <GithubContributionsGraph />
+      </div>
       <ProjectBlock>
         <ProjectMeta>
           <ProjectTitle>orbit</ProjectTitle>
-          <Link className="text-xs" href="https://github.com/tsanga/orbit">github</Link>
+          <Link className="text-xs" href="https://github.com/tsanga/orbit">
+            github
+          </Link>
         </ProjectMeta>
         <ProjectBody>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -85,9 +91,7 @@ const ProjectTitle = ({
   className = "",
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <h2
-      className={cn("text-2xl font-bold text-left font-serif", className)}
-    >
+    <h2 className={cn("text-2xl font-bold text-left font-serif", className)}>
       {children}
     </h2>
   );
