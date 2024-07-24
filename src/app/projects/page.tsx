@@ -6,48 +6,63 @@ import { PropsWithChildren } from "react";
 export default function ProjectsPage() {
   return (
     <div className="flex flex-col w-full h-full gap-3">
-      <div className="flex flex-row items-center justify-center w-full font-mono border p-3 bg-primary text-primary-foreground">
+      <div className="flex flex-row items-center justify-center w-full font-mono border p-3">
         <GithubContributionsGraph />
       </div>
       <ProjectBlock>
         <ProjectMeta>
           <ProjectTitle>orbit</ProjectTitle>
-          <Link className="text-xs" href="https://github.com/tsanga/orbit">
-            github
-          </Link>
+          <ProjectLinks>
+            <Link href="https://github.com/tsanga/orbit">github</Link>
+          </ProjectLinks>
         </ProjectMeta>
         <ProjectBody>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Necessitatibus et porro culpa earum sint, minima id, impedit accusamus
-          excepturi placeat optio, alias praesentium illum quod. Pariatur
-          temporibus nulla accusamus consequatur.
+          orbit is a WebSockets-as-a-service API and SDK aiming to provide the
+          best possible experience for developers wanting to add real-time
+          features to Next.js applications.
         </ProjectBody>
       </ProjectBlock>
-      <ProjectBlock>
-        <ProjectTitle>toad</ProjectTitle>
+      <ProjectBlock className="bg-muted-foreground text-primary-foreground">
+        <ProjectMeta>
+          <ProjectTitle>toad</ProjectTitle>
+          <ProjectDescription className="text-muted">
+            (work in progress)
+          </ProjectDescription>
+        </ProjectMeta>
         <ProjectBody>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Necessitatibus et porro culpa earum sint, minima id, impedit accusamus
-          excepturi placeat optio, alias praesentium illum quod. Pariatur
-          temporibus nulla accusamus consequatur.
+          toad is a real-time web application with an embedded browser allowing
+          users to consume media and browse the internet collaboratively.
         </ProjectBody>
       </ProjectBlock>
-      <ProjectBlock>
-        <ProjectTitle>musty</ProjectTitle>
+      <ProjectBlock className="bg-secondary text-secondary-foreground">
+        <ProjectMeta>
+          <ProjectTitle>musty</ProjectTitle>
+          <ProjectLinks>
+            <Link href="https://github.com/tsanga/musty" target="_blank">
+              github
+            </Link>
+          </ProjectLinks>
+        </ProjectMeta>
         <ProjectBody>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Necessitatibus et porro culpa earum sint, minima id, impedit accusamus
-          excepturi placeat optio, alias praesentium illum quod. Pariatur
-          temporibus nulla accusamus consequatur.
+          musty is an asynchronous database-agnostic object-document mapper
+          library for Rust applications. it allows developers to turn a struct
+          into a queryable database model with one line of code.
         </ProjectBody>
       </ProjectBlock>
-      <ProjectBlock>
-        <ProjectTitle>tsanga</ProjectTitle>
+      <ProjectBlock className="bg-background text-foreground">
+        <ProjectMeta>
+          <ProjectTitle>drink</ProjectTitle>
+          <ProjectLinks>
+            <Link href="https://github.com/jonahseguin/drink" target="_blank">
+              github
+            </Link>
+          </ProjectLinks>
+        </ProjectMeta>
         <ProjectBody>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Necessitatibus et porro culpa earum sint, minima id, impedit accusamus
-          excepturi placeat optio, alias praesentium illum quod. Pariatur
-          temporibus nulla accusamus consequatur.
+          drink is a command and argument parsing library that utilizes
+          Inversion-of-Control and Dependency-Injection design patterns inspired
+          by Google&apos;s Guice library and sk89q&apos;s Intake command
+          library.
         </ProjectBody>
       </ProjectBlock>
     </div>
@@ -86,6 +101,22 @@ const ProjectMeta = ({
   );
 };
 
+const ProjectLinks = ({
+  children,
+  className = "",
+}: PropsWithChildren<{ className?: string }>) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-row gap-1.5 items-center font-mono font-medium text-xs text-muted-foreground",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+};
+
 const ProjectTitle = ({
   children,
   className = "",
@@ -97,6 +128,22 @@ const ProjectTitle = ({
   );
 };
 
+const ProjectDescription = ({
+  children,
+  className = "",
+}: PropsWithChildren<{ className?: string }>) => {
+  return (
+    <p
+      className={cn(
+        "text-xs font-normal text-left font-mono text-muted-foreground",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
+
 const ProjectBody = ({
   children,
   className = "",
@@ -104,7 +151,7 @@ const ProjectBody = ({
   return (
     <div
       className={cn(
-        "flex flex-col w-1/2 gap-3 text-right float-right font-mono font-medium text-base",
+        "flex flex-col w-1/2 gap-3 text-right float-right font-mono font-medium text-lg lowercase",
         className
       )}
     >
