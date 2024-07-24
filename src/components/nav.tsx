@@ -27,7 +27,6 @@ export const Nav = () => {
         </li>
       </ul>
       <ul className="hidden sm:flex flex-row gap-6 items-center justify-end">
-        <NavItem href="/about" label="about" />
         <NavItem href="/projects" label="projects" />
         <NavItem href="/resume" label="résumé" />
         <NavItem href="/contact" label="contact" />
@@ -108,7 +107,6 @@ const MobileDrawer = () => {
           </div>
           <div className="flex flex-col w-full gap-12 items-end justify-end">
             <DrawerNavItem href="/" label="home" />
-            <DrawerNavItem href="/about" label="about" />
             <DrawerNavItem href="/projects" label="projects" />
             <DrawerNavItem href="/resume" label="résumé" />
             <DrawerNavItem href="/contact" label="contact" />

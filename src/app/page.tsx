@@ -94,7 +94,7 @@ export default function Home() {
           <source src="img/walking.mp4" />
         </video>
 
-        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground fade-in text-primary-foreground duration-500 animate-in transform slide-in-from-bottom-full">
+        <div className="flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-muted-foreground dark:bg-secondary dark:text-secondary-foreground fade-in text-primary-foreground duration-500 animate-in transform slide-in-from-bottom-full">
           <p
             className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-right lowercase ${BesleyFont.className}`}
           >
