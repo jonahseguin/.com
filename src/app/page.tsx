@@ -14,7 +14,8 @@ export default function Home() {
           </p>
           <Link
             className="font-medium font-serif text-xl lg:text-3xl uppercase text-center w-full"
-            href="/resume"
+            href="/resume_jonah_seguin.pdf"
+            target="_blank"
           >
             Software Engineer
           </Link>
@@ -28,7 +29,7 @@ export default function Home() {
           </p>
           <Link
             className="font-medium font-serif text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center"
-            href="/about"
+            href="/"
           >
             Montrèal
           </Link>
@@ -72,12 +73,13 @@ export default function Home() {
           <p
             className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-left lowercase ${BesleyFont.className}`}
           >
-            learn more <br />
+            i&apos;m available <br />
             <Link
-              href="/about"
+              href="/resume_jonah_seguin.pdf"
+              target="_blank"
               className="underline-offset-4 underline decoration-inherit"
             >
-              about me.
+              for hire.
             </Link>
           </p>
         </div>
