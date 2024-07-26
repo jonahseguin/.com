@@ -9,7 +9,7 @@ export default function ProjectsPage() {
       <div className="flex flex-row items-center justify-center w-full font-mono border p-3">
         <GithubContributionsGraph />
       </div>
-      <div className="grid grid-cols-2 grid-rows-2 gap-3 h-full w-full">
+      <div className="grid grid-cols-2 gap-3 h-full w-full">
         <ProjectBlock>
           <ProjectMeta>
             <ProjectTitle>orbit</ProjectTitle>
@@ -79,7 +79,7 @@ const ProjectBlock = ({
   return (
     <section
       className={cn(
-        "relative flex flex-row justify-between w-full h-full p-3 gap-3 bg-primary border text-primary-foreground",
+        "relative flex flex-col justify-between w-full h-full p-3 gap-3 bg-primary border text-primary-foreground",
         className
       )}
     >
@@ -95,7 +95,7 @@ const ProjectMeta = ({
   return (
     <div
       className={cn(
-        "flex flex-col gap-1.5 items-start font-mono font-medium text-base",
+        "flex flex-col gap-1.5 items-start font-mono font-medium text-base w-full h-full",
         className
       )}
     >
@@ -152,13 +152,13 @@ const ProjectBody = ({
   className = "",
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <div
+    <p
       className={cn(
-        "flex flex-col h-full items-end justify-end w-full md:w-1/2 gap-3 text-right float-right font-mono font-medium text-lg lowercase",
+        "flex-1 whitespace-break-spaces text-pretty h-full items-end justify-end w-full gap-3 font-mono font-medium text-lg lowercase text-justify",
         className
       )}
     >
       {children}
-    </div>
+    </p>
   );
 };
