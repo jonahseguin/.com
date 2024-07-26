@@ -29,7 +29,11 @@ export const Nav = () => {
       <ul className="hidden sm:flex flex-row gap-6 items-center justify-end">
         <NavItem href="/projects" label="projects" />
         <NavItem href="/contact" label="contact" />
-        <NavItem href="/resume_jonah_seguin.pdf" external label="résumé" />
+        <NavItem
+          href="https://jonahseguin.github.io/resume/resume.pdf"
+          external
+          label="résumé"
+        />
       </ul>
       <MobileDrawer />
     </nav>
@@ -115,7 +119,7 @@ const MobileDrawer = () => {
             <DrawerNavItem href="/projects" label="projects" />
             <DrawerNavItem href="/contact" label="contact" />
             <DrawerNavItem
-              href="/resume_jonah_seguin.pdf"
+              href="https://jonahseguin.github.io/resume/resume.pdf"
               external={true}
               label="résumé"
             />
