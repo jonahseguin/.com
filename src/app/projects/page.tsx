@@ -9,62 +9,65 @@ export default function ProjectsPage() {
       <div className="flex flex-row items-center justify-center w-full font-mono border p-3">
         <GithubContributionsGraph />
       </div>
-      <ProjectBlock>
-        <ProjectMeta>
-          <ProjectTitle>orbit</ProjectTitle>
-          <ProjectLinks>
-            <Link href="https://github.com/tsanga/orbit">github</Link>
-          </ProjectLinks>
-        </ProjectMeta>
-        <ProjectBody>
-          orbit is a WebSockets-as-a-service API and SDK aiming to provide the
-          best possible experience for developers wanting to add real-time
-          features to Next.js applications.
-        </ProjectBody>
-      </ProjectBlock>
-      <ProjectBlock className="bg-muted-foreground text-primary-foreground">
-        <ProjectMeta>
-          <ProjectTitle>toad</ProjectTitle>
-          <ProjectDescription className="text-muted">
-            (work in progress)
-          </ProjectDescription>
-        </ProjectMeta>
-        <ProjectBody>
-          toad is a real-time web application with an embedded browser allowing
-          users to consume media and browse the internet collaboratively.
-        </ProjectBody>
-      </ProjectBlock>
-      <ProjectBlock className="bg-secondary text-secondary-foreground">
-        <ProjectMeta>
-          <ProjectTitle>musty</ProjectTitle>
-          <ProjectLinks>
-            <Link href="https://github.com/tsanga/musty" target="_blank">
-              github
-            </Link>
-          </ProjectLinks>
-        </ProjectMeta>
-        <ProjectBody>
-          musty is an asynchronous database-agnostic object-document mapper
-          library for Rust applications. it allows developers to turn a struct
-          into a queryable database model with one line of code.
-        </ProjectBody>
-      </ProjectBlock>
-      <ProjectBlock className="bg-background text-foreground">
-        <ProjectMeta>
-          <ProjectTitle>drink</ProjectTitle>
-          <ProjectLinks>
-            <Link href="https://github.com/jonahseguin/drink" target="_blank">
-              github
-            </Link>
-          </ProjectLinks>
-        </ProjectMeta>
-        <ProjectBody>
-          drink is a command and argument parsing library that utilizes
-          Inversion-of-Control and Dependency-Injection design patterns inspired
-          by Google&apos;s Guice library and sk89q&apos;s Intake command
-          library.
-        </ProjectBody>
-      </ProjectBlock>
+      <div className="grid grid-cols-2 grid-rows-2 gap-3 h-full w-full">
+        <ProjectBlock>
+          <ProjectMeta>
+            <ProjectTitle>orbit</ProjectTitle>
+            <ProjectLinks>
+              <Link href="https://github.com/tsanga/orbit">github</Link>
+            </ProjectLinks>
+          </ProjectMeta>
+          <ProjectBody>
+            orbit is a WebSockets-as-a-service API and SDK aiming to provide the
+            best possible experience for developers wanting to add real-time
+            features to Next.js applications.
+          </ProjectBody>
+        </ProjectBlock>
+        <ProjectBlock className="bg-muted-foreground text-primary-foreground">
+          <ProjectMeta>
+            <ProjectTitle>toad</ProjectTitle>
+            <ProjectDescription className="text-muted">
+              (work in progress)
+            </ProjectDescription>
+          </ProjectMeta>
+          <ProjectBody>
+            toad is a real-time web application with an embedded browser
+            allowing users to consume media and browse the internet
+            collaboratively.
+          </ProjectBody>
+        </ProjectBlock>
+        <ProjectBlock className="bg-secondary text-secondary-foreground">
+          <ProjectMeta>
+            <ProjectTitle>musty</ProjectTitle>
+            <ProjectLinks>
+              <Link href="https://github.com/tsanga/musty" target="_blank">
+                github
+              </Link>
+            </ProjectLinks>
+          </ProjectMeta>
+          <ProjectBody>
+            musty is an asynchronous database-agnostic object-document mapper
+            library for Rust applications. it allows developers to turn a struct
+            into a queryable database model with one line of code.
+          </ProjectBody>
+        </ProjectBlock>
+        <ProjectBlock className="bg-background text-foreground">
+          <ProjectMeta>
+            <ProjectTitle>drink</ProjectTitle>
+            <ProjectLinks>
+              <Link href="https://github.com/jonahseguin/drink" target="_blank">
+                github
+              </Link>
+            </ProjectLinks>
+          </ProjectMeta>
+          <ProjectBody>
+            drink is a command and argument parsing library that utilizes
+            Inversion-of-Control and Dependency-Injection design patterns
+            inspired by Google&apos;s Guice library and sk89q&apos;s Intake
+            command library.
+          </ProjectBody>
+        </ProjectBlock>
+      </div>
     </div>
   );
 }
@@ -76,7 +79,7 @@ const ProjectBlock = ({
   return (
     <section
       className={cn(
-        "relative flex flex-row justify-between w-full p-3 gap-3 bg-primary border text-primary-foreground",
+        "relative flex flex-row justify-between w-full h-full p-3 gap-3 bg-primary border text-primary-foreground",
         className
       )}
     >
@@ -151,7 +154,7 @@ const ProjectBody = ({
   return (
     <div
       className={cn(
-        "flex flex-col w-1/2 gap-3 text-right float-right font-mono font-medium text-lg lowercase",
+        "flex flex-col h-full items-end justify-end w-full md:w-1/2 gap-3 text-right float-right font-mono font-medium text-lg lowercase",
         className
       )}
     >
@@ -159,7 +162,3 @@ const ProjectBody = ({
     </div>
   );
 };
-
-// tsanga: orbit, toad, musty, server orchestration,
-// jonah: drink, aBsorb, personal website, ninja/reflex
-// other: ecodoor, plshurtme, plsremoveme, worlddoors, 3dpanelfx
