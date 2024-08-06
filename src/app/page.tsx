@@ -14,7 +14,7 @@ export default function Home() {
           </p>
           <Link
             className="font-medium font-serif text-xl lg:text-3xl uppercase text-center w-full"
-            href="/resume_jonah_seguin.pdf"
+            href="/resume"
             target="_blank"
           >
             Software Engineer
@@ -75,7 +75,7 @@ export default function Home() {
           >
             i&apos;m available <br />
             <Link
-              href="/resume_jonah_seguin.pdf"
+              href="/resume"
               target="_blank"
               className="underline-offset-4 underline decoration-inherit"
             >
