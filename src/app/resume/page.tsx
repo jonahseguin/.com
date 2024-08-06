@@ -31,7 +31,7 @@ export default function ResumePage() {
         className="w-full h-full"
       >
         <div className="flex items-center justify-center w-full h-full border bg-primary p-3 text-primary-foreground">
-          <p className="text-muted-foreground text-xs font-serif font-medium">
+          <p className="text-xs font-serif font-medium">
             If my resume is not displaying here,{" "}
             <Link
               href="https://jonahseguin.github.io/resume/resume.pdf"
