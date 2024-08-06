@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh font-sans antialiased bg-background text-foreground`}
+        className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh h-full font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider
           attribute="data-theme"
@@ -60,7 +60,7 @@ export default function RootLayout({
           enableSystem
           enableColorScheme={true}
         >
-          <div className="w-dvw min-h-dvh md:h-dvh flex flex-col gap-y-3 mx-auto px-6">
+          <div className="w-dvw min-h-dvh md:h-dvh h-full flex flex-col gap-y-3 mx-auto px-6">
             <Nav />
             <div className="flex-1 md:border w-full h-full md:p-3">
               {children}

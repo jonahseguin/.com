@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
+  /*async redirects() {
     return [
       {
         source: "/resume",
@@ -9,7 +9,7 @@ const nextConfig = {
         permanent: false,
       },
     ];
-  },
+  },*/
 };
 
 export default nextConfig;
