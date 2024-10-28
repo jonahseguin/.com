@@ -89,7 +89,7 @@ export default function Home() {
           disablePictureInPicture
           width="1440"
           height="1434"
-          className="h-full w-full object-cover animate-in transform duration-500 fade-in"
+          className="h-full w-full object-cover animate-in transform duration-500 fade-in select-none"
         >
           <source src="img/walking.mp4" />
         </video>
@@ -114,11 +114,11 @@ export default function Home() {
         </div>
         <div className="hidden lg:flex items-center justify-center w-full h-full">
           <Image
-            src="/img/selfie-close.jpg"
-            alt="Jonah's Avatar"
+            src="/img/profile.jpg"
+            alt="Jonah"
             height="623"
             width="1337"
-            className="h-full w-full object-cover animate-in transform duration-500 fade-in-0 slide-in-from-right-full"
+            className="h-full w-full object-cover animate-in transform duration-500 fade-in-0 slide-in-from-right-full select-none"
             priority
           />
         </div>
