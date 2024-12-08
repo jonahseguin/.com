@@ -54,12 +54,7 @@ export default function RootLayout({
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh h-full font-sans antialiased bg-background text-foreground`}
       >
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="system"
-          enableSystem
-          enableColorScheme={true}
-        >
+        <ThemeProvider attribute="data-theme" forcedTheme="dark">
           <div className="w-dvw min-h-dvh md:h-dvh h-full flex flex-col gap-y-3 mx-auto px-6">
             <Nav />
             <div className="flex-1 md:border w-full h-full md:p-3">
