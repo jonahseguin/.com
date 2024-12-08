@@ -14,22 +14,26 @@ import { usePathname } from "next/navigation";
 import { FC } from "react";
 
 export const Nav = () => {
+  const pathname = usePathname();
   return (
     <nav className="flex flex-row w-full items-center justify-between gap-6 pt-3">
       <ul className="flex flex-row gap-3 items-center">
         <li>
           <Link
             href="/"
-            className="font-serif text-sm font-extrabold tracking-wide text-primary lowercase leading-none"
+            className={cn(
+              "font-serif text-sm font-extrabold text-phthalo-text tracking-widest lowercase leading-none",
+              pathname === "/" && "underline underline-offset-4"
+            )}
           >
             jonah seguin
           </Link>
         </li>
       </ul>
       <ul className="hidden sm:flex flex-row gap-6 items-center justify-end">
-        <NavItem href="/projects" label="projects" />
-        <NavItem href="/contact" label="contact" />
-        <NavItem href="/resume" label="résumé" />
+        <NavItem href="/projects" label="/projects" />
+        <NavItem href="/contact" label="/contact" />
+        <NavItem href="/resume" label="/résumé" />
       </ul>
       <MobileDrawer />
     </nav>
@@ -49,7 +53,7 @@ const NavItem: FC<{ href: string; label: string; external?: boolean }> = ({
         target={external ? "_blank" : undefined}
         href={href}
         className={cn(
-          "font-mono text-xs font-normal tracking-tight text-primary lowercase transition-all",
+          "font-mono text-xs font-normal tracking-tight text-phthalo-text lowercase transition-all",
           isActive && "font-semibold underline underline-offset-4"
         )}
       >
@@ -64,7 +68,7 @@ const MobileDrawer = () => {
     <Drawer>
       <DrawerTrigger asChild>
         <Button
-          variant={"outline"}
+          variant={"phthalo"}
           size="iconXs"
           className="sm:hidden font-mono text-xs font-normal tracking-tight"
         >
@@ -135,7 +139,7 @@ const DrawerNavItem: FC<{
       href={href}
       target={external ? "_blank" : undefined}
       className={cn(
-        "float-right text-right text-xl font-medium font-mono transition-all",
+        "float-right text-right text-xl font-medium font-mono transition-all text-phthalo-foreground",
         isActive && "underline underline-offset-4 font-semibold"
       )}
     >

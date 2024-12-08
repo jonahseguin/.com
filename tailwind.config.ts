@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["selector", '[data-theme="dark"]'],
@@ -27,6 +27,12 @@ const config = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+        },
+        phthalo: {
+          DEFAULT: "hsl(var(--phthalo))",
+          foreground: "hsl(var(--phthalo-foreground))",
+          deep: "hsl(var(--phthalo-deep))",
+          text: "hsl(var(--phthalo-text))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -77,4 +83,4 @@ const config = {
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
 
-export default config
+export default config;
