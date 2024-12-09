@@ -2,28 +2,8 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-row w-full items-center justify-between gap-6 pb-3">
-      <ul className="flex flex-row gap-3 items-center">
-        <li>
-          <Link
-            href="https://github.com/jonahseguin/.com"
-            target="_blank"
-            className="font-mono text-xs font-normal tracking-tight text-phthalo-text lowercase"
-          >
-            [source]
-          </Link>
-        </li>
-      </ul>
-      <ul className="flex flex-row gap-6 items-center justify-end">
-        <li>
-          <Link
-            href="https://www.linkedin.com/in/jonah-seguin-b53374177/"
-            target="_blank"
-            className="font-mono text-xs font-normal tracking-tight text-phthalo-text lowercase"
-          >
-            [linkedin]
-          </Link>
-        </li>
+    <footer className="flex flex-row w-full items-center pb-3">
+      <ul className="flex flex-row gap-6 w-full items-center justify-end">
         <li>
           <Link
             href="https://github.com/jonahseguin"
@@ -31,6 +11,15 @@ export const Footer = () => {
             className="font-mono text-xs font-normal tracking-tight text-phthalo-text lowercase"
           >
             [github]
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.linkedin.com/in/jonah-seguin-b53374177/"
+            target="_blank"
+            className="font-mono text-xs font-normal tracking-tight text-phthalo-text lowercase"
+          >
+            [linkedin]
           </Link>
         </li>
         <li>
