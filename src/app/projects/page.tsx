@@ -6,7 +6,7 @@ import { PropsWithChildren } from "react";
 export default function ProjectsPage() {
   return (
     <div className="flex flex-col w-full h-full gap-3">
-      <div className="flex flex-row items-center justify-center w-full font-mono border p-3">
+      <div className="flex flex-row items-center justify-center w-full font-mono border p-3 bg-phthalo-deep">
         <GithubContributionsGraph />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 h-full w-full">

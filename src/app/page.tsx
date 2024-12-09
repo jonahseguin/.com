@@ -1,56 +1,8 @@
-import { Courier_Prime } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
-
-const BesleyFont = Courier_Prime({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-3 w-full h-full">
-      <div className="grid grid-rows-3 md:grid-cols-3 md:grid-rows-none w-full place-items-center flex-row items-center gap-3">
-        <div className="border relative flex text-xs items-center w-full h-full bg-phthalo-foreground p-3 text-pretty duration-500 fade-in animate-in transform slide-in-from-top-full md:slide-in-from-left-full">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-phthalo tracking-tight -ml-3">
-            what
-          </p>
-          <Link
-            className="font-medium font-serif text-xl lg:text-3xl uppercase text-center w-full text-phthalo"
-            href="/resume"
-          >
-            Software Engineer
-          </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center text-phthalo tracking-tight -mr-3">
-            what
-          </p>
-        </div>
-        <div className="border relative flex w-full h-full place-items-center bg-phthalo p-3 text-pretty duration-500 fade-in animate-in transform slide-in-from-right-full">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center text-phthalo-foreground tracking-tight -ml-3">
-            live
-          </p>
-          <Link
-            className="font-medium font-serif text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center text-phthalo-foreground"
-            href="/"
-          >
-            Montrèal
-          </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center text-phthalo-foreground tracking-tight -mr-3">
-            live
-          </p>
-        </div>
-        <div className="border relative flex text-xs w-full place-items-center h-full bg-phthalo-deep text-phthalo-foreground p-3 text-pretty fade-in duration-500 animate-in transform slide-in-from-left-full md:slide-in-from-top-full">
-          <p className="absolute left-0 -rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -ml-3">
-            work
-          </p>
-          <Link
-            className="font-medium font-serif text-xl lg:text-3xl w-full whitespace-break-spaces uppercase text-center"
-            href="/contact"
-          >
-            HIRE ME
-          </Link>
-          <p className="absolute right-0 rotate-90 font-black font-mono text-xl lowercase text-center tracking-tight -mr-3">
-            work
-          </p>
-        </div>
-      </div>
       <div className="grid h-full w-full grid-rows-2 grid-cols-2 md:grid-rows-none md:grid-cols-4 lg:grid-cols-5 items-center gap-3">
         <div className="flex items-center justify-center w-full h-full">
           <Image
@@ -64,21 +16,10 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 border bg-phthalo dark:bg-phthalo-deep text-phthalo-foreground duration-500 fade-in animate-in transform slide-in-from-bottom-full">
           <p
-            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-left lowercase ${BesleyFont.className}`}
+            className={`text-pretty font-medium font-sans text-3xl sm:text-5xl text-left lowercase`}
           >
             hi. <br /> i&apos;m jonah, a full-stack software engineer from
             canada.
-          </p>
-          <p
-            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-left lowercase ${BesleyFont.className}`}
-          >
-            i&apos;m available <br />
-            <Link
-              href="/resume"
-              className="underline-offset-4 underline decoration-inherit"
-            >
-              for hire.
-            </Link>
           </p>
         </div>
         <video
@@ -87,29 +28,19 @@ export default function Home() {
           playsInline
           autoPlay
           disablePictureInPicture
+          unselectable="on"
           width="1440"
           height="1434"
           className="h-full w-full object-cover border animate-in transform duration-500 fade-in select-none"
         >
-          <source src="img/walking.mp4" />
+          <source src="img/walking.webm" />
         </video>
 
-        <div className="border flex flex-col gap-6 items-end justify-between w-full h-full p-3 bg-phthalo-foreground text-phthalo fade-in duration-500 animate-in transform slide-in-from-bottom-full">
+        <div className="border flex flex-col gap-6 items-end justify-end w-full h-full p-3 bg-phthalo-foreground text-phthalo fade-in duration-500 animate-in transform slide-in-from-bottom-full">
           <p
-            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-right lowercase ${BesleyFont.className}`}
+            className={`text-pretty font-medium font-sans text-3xl sm:text-5xl text-right lowercase`}
           >
             i build software for the internet.
-          </p>
-          <p
-            className={`text-pretty font-medium font-mono text-2xl sm:text-3xl text-right lowercase ${BesleyFont.className}`}
-          >
-            check out some of the{" "}
-            <Link
-              href="/projects"
-              className="underline-offset-4 underline decoration-inherit"
-            >
-              stuff i&apos;ve built.
-            </Link>
           </p>
         </div>
         <div className="hidden lg:flex items-center justify-center w-full h-full">
