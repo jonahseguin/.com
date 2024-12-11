@@ -23,7 +23,7 @@ export const Nav = () => {
             href="/"
             className={cn(
               "font-serif text-sm font-extrabold text-phthalo-text tracking-widest lowercase leading-none",
-              pathname === "/" && "underline underline-offset-4"
+              pathname === "/" && "sm:underline sm:underline-offset-4"
             )}
           >
             jonah seguin
@@ -68,26 +68,11 @@ const MobileDrawer = () => {
     <Drawer>
       <DrawerTrigger asChild>
         <Button
-          variant={"phthalo"}
-          size="iconXs"
-          className="sm:hidden font-mono text-xs font-normal tracking-tight"
+          variant={"ghostPhthalo"}
+          size="ghost"
+          className="sm:hidden font-mono text-xs font-semibold tracking-tight"
         >
-          <span className="sr-only">navigation menu</span>
-          <svg
-            data-testid="geist-icon"
-            height="16"
-            strokeLinejoin="round"
-            viewBox="0 0 16 16"
-            width="16"
-            style={{ color: "currentcolor" }}
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M1.75 4H1V5.5H1.75H14.25H15V4H14.25H1.75ZM1.75 10.5H1V12H1.75H14.25H15V10.5H14.25H1.75Z"
-              fill="currentColor"
-            ></path>
-          </svg>
+          [navigation]
         </Button>
       </DrawerTrigger>
       <DrawerContent className="px-3 w-full">
