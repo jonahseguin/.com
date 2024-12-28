@@ -22,8 +22,8 @@ export const Nav = () => {
           <Link
             href="/"
             className={cn(
-              "font-serif text-sm font-extrabold text-phthalo-text tracking-widest lowercase leading-none",
-              pathname === "/" && "sm:underline sm:underline-offset-4"
+              "font-mono text-sm font-extrabold text-phthalo-text tracking-widest lowercase leading-none",
+              pathname === "/" && "sm:underline sm:underline-offset-8"
             )}
           >
             jonah seguin

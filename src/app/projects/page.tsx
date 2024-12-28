@@ -153,7 +153,7 @@ const ProjectTitle = ({
   return (
     <h2
       className={cn(
-        "text-2xl font-bold text-left font-serif text-foreground",
+        "text-2xl font-bold text-left font-sans text-foreground",
         className
       )}
     >

@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col md:flex-row h-full w-full gap-3">
       <div className="flex flex-col justify-between w-full h-full gap-3 p-3 bg-phthalo border text-phthalo-foreground">
-        <h1 className="text-4xl lowercase text-left font-serif font-light">
+        <h1 className="text-4xl lowercase text-left font-sans font-light">
           discord
         </h1>
         <div className="flex w-full justify-end">
@@ -18,7 +18,7 @@ export default function ContactPage() {
         </div>
       </div>
       <div className="flex flex-col justify-between w-full h-full gap-3 p-3 bg-phthalo-deep border text-phthalo-foreground">
-        <h1 className="text-4xl lowercase text-left font-serif font-light">
+        <h1 className="text-4xl lowercase text-left font-sans font-light">
           email
         </h1>
         <div className="flex w-full justify-end">

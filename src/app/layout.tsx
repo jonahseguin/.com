@@ -1,10 +1,37 @@
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 import { ThemeProvider } from "@/components/theme-provider";
-import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
 import "./globals.css";
+
+const tx02 = localFont({
+  src: [
+    {
+      path: "../../public/font/TX-02/TX-02-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/font/TX-02/TX-02-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/font/TX-02/TX-02-Oblique.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/font/TX-02/TX-02-Bold-Oblique.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-tx02",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -52,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${GeistSans.variable} ${GeistMono.variable} w-dvw min-h-dvh md:h-dvh h-full font-sans antialiased bg-background text-foreground`}
+        className={`${tx02.variable} ${GeistSans.variable} min-h-dvh md:h-dvh h-full font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider attribute="data-theme" forcedTheme="dark">
           <div className="w-dvw min-h-dvh md:h-dvh h-full flex flex-col gap-y-3 mx-auto px-6">
