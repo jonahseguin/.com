@@ -14,9 +14,9 @@ export default function Home() {
             className="h-full w-full object-cover border animate-in transform duration-500 fade-in-0 slide-in-from-left-full"
           />
         </div>
-        <div className="flex flex-col gap-6 items-start justify-between w-full h-full p-3 border bg-phthalo dark:bg-phthalo-deep text-phthalo-foreground duration-500 fade-in animate-in transform slide-in-from-bottom-full">
+        <div className="flex flex-col gap-6 items-start w-full h-full p-3 border bg-phthalo dark:bg-phthalo-deep text-phthalo-foreground duration-500 fade-in animate-in transform slide-in-from-bottom-full">
           <p
-            className={`text-pretty font-medium font-sans text-3xl sm:text-5xl text-left lowercase`}
+            className={`font-bold leading-10 font-mono text-3xl w-full sm:text-4xl text-left lowercase`}
           >
             hi. <br /> i&apos;m jonah, a full-stack software engineer from
             canada.
@@ -38,7 +38,7 @@ export default function Home() {
 
         <div className="border flex flex-col gap-6 items-end justify-end w-full h-full p-3 bg-phthalo-foreground text-phthalo fade-in duration-500 animate-in transform slide-in-from-bottom-full">
           <p
-            className={`text-pretty font-medium font-sans text-3xl sm:text-5xl text-right lowercase`}
+            className={`w-full font-bold leading-10 font-mono text-3xl sm:text-4xl text-right lowercase`}
           >
             i build software for the internet.
           </p>

@@ -137,7 +137,7 @@ const ProjectLinks = ({
   return (
     <div
       className={cn(
-        "flex flex-row gap-1.5 items-center font-mono font-medium text-xs",
+        "flex flex-row gap-1.5 items-center font-mono font-bold text-xs text-phthalo",
         className
       )}
     >
@@ -153,7 +153,7 @@ const ProjectTitle = ({
   return (
     <h2
       className={cn(
-        "text-2xl font-bold text-left font-sans text-foreground",
+        "text-2xl font-bold font-mono text-left text-foreground",
         className
       )}
     >
@@ -167,7 +167,7 @@ const ProjectDescription = ({
   className = "",
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("text-xs font-normal text-left font-mono", className)}>
+    <p className={cn("text-xs font-normal text-left font-mono text-phthalo", className)}>
       {children}
     </p>
   );
