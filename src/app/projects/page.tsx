@@ -12,8 +12,7 @@ export default function ProjectsPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 h-full w-full">
         <ProjectBlock>
           <ProjectMeta>
-            <ProjectTitle>sock8</ProjectTitle>
-            <ProjectDescription>coming soon!</ProjectDescription>
+            <ProjectTitle>sock8.com</ProjectTitle>
             <ProjectLinks>
               <Link href="https://sock8.com" target="_blank">
                 [website]
@@ -24,14 +23,14 @@ export default function ProjectsPage() {
             </ProjectLinks>
           </ProjectMeta>
           <ProjectBody>
-            sock8 is a WebSockets-as-a-service API and SDK aiming to provide the
-            best possible experience for developers wanting to add real-time
-            features to Next.js applications.
+            Composable WebSockets-as-a-service API and SDK with end-to-end type
+            safety aiming to provide the best possible experience for developers
+            wanting to add real-time features to Next.js applications.
           </ProjectBody>
         </ProjectBlock>
         <ProjectBlock>
           <ProjectMeta>
-            <ProjectTitle>overlayz</ProjectTitle>
+            <ProjectTitle>overlayz.io</ProjectTitle>
             <ProjectLinks>
               <Link href="https://overlayz.io" target="_blank">
                 [website]
@@ -39,20 +38,21 @@ export default function ProjectsPage() {
             </ProjectLinks>
           </ProjectMeta>
           <ProjectBody>
-            overlayz is an overlay editor and real-time service for streamers
-            enriched with live data.
+            a web-based interactive editor and real-time service for editing and
+            consuming custom overlays for streamers enriched with live data.
           </ProjectBody>
         </ProjectBlock>
         <ProjectBlock>
           <ProjectMeta>
-            <ProjectTitle>tattcloud</ProjectTitle>
+            <ProjectTitle>tattcloud.com</ProjectTitle>
             <ProjectLinks>
               <Link href="https://tattcloud.com">[website]</Link>
             </ProjectLinks>
           </ProjectMeta>
           <ProjectBody>
-            tattcloud is an all-in-one booking and payment platform for tattoo
-            artists and clients.
+            an all-in-one booking, scheduling and payment platform for tattoo
+            artists, studios and clients with a focus on providing artists and
+            studios with a source of truth.
           </ProjectBody>
         </ProjectBlock>
         <ProjectBlock>
@@ -61,9 +61,8 @@ export default function ProjectsPage() {
             <ProjectDescription>(work in progress)</ProjectDescription>
           </ProjectMeta>
           <ProjectBody>
-            toad is a real-time web application with an embedded browser
-            allowing users to consume media and browse the internet
-            collaboratively.
+            a real-time web application with an embedded browser allowing users
+            to consume media and browse the internet collaboratively.
           </ProjectBody>
         </ProjectBlock>
         <ProjectBlock>
@@ -76,7 +75,7 @@ export default function ProjectsPage() {
             </ProjectLinks>
           </ProjectMeta>
           <ProjectBody>
-            musty is an asynchronous database-agnostic object-document mapper
+            an asynchronous database-agnostic object-document mapper
             library for Rust applications. it allows developers to turn a struct
             into a queryable database model with one line of code.
           </ProjectBody>
@@ -91,10 +90,9 @@ export default function ProjectsPage() {
             </ProjectLinks>
           </ProjectMeta>
           <ProjectBody>
-            drink is a command and argument parsing library that utilizes
+            a command and argument parsing library that utilizes
             Inversion-of-Control and Dependency-Injection design patterns
-            inspired by Google&apos;s Guice library and sk89q&apos;s Intake
-            command library.
+            inspired by Google&apos;s Guice library.
           </ProjectBody>
         </ProjectBlock>
       </div>
@@ -171,7 +169,12 @@ const ProjectDescription = ({
   className = "",
 }: PropsWithChildren<{ className?: string }>) => {
   return (
-    <p className={cn("text-xs font-normal text-left font-mono text-phthalo", className)}>
+    <p
+      className={cn(
+        "text-xs font-normal text-left font-mono text-phthalo",
+        className
+      )}
+    >
       {children}
     </p>
   );
