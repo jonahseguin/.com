@@ -35,10 +35,10 @@ const tx02 = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "jonah seguin",
-    template: "%s | jonah seguin",
+    default: "Jonah Seguin",
+    template: "%s | Jonah Seguin",
   },
-  description: "full-stack software developer in montréal",
+  description: "Full-stack Software Developer in Montréal",
   applicationName: "jonahseguin.com",
   referrer: "origin-when-cross-origin",
   keywords: [
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
   creator: "Jonah Seguin",
   publisher: "Jonah Seguin",
   openGraph: {
-    title: "jonah seguin",
-    description: "full-stack software engineer in montréal",
+    title: "Jonah Seguin",
+    description: "Full-stack Software Developer in Montréal",
     url: "https://jonahseguin.com",
-    siteName: "jonah seguin",
+    siteName: "Jonah Seguin",
     images: [
       {
         url: "https://jonahseguin.com/og.jpg", // Must be an absolute URL
         width: 410,
         height: 410,
-        alt: "jonah seguin",
+        alt: "Jonah Seguin",
       },
     ],
     locale: "en_US",
