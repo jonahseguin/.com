@@ -13,6 +13,7 @@ export default function ProjectsPage() {
         <ProjectBlock>
           <ProjectMeta>
             <ProjectTitle>sock8</ProjectTitle>
+            <ProjectDescription>coming soon!</ProjectDescription>
             <ProjectLinks>
               <Link href="https://sock8.com" target="_blank">
                 [website]
