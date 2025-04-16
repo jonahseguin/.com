@@ -12,15 +12,18 @@ export default function ProjectsPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 h-full w-full">
         <ProjectBlock>
           <ProjectMeta>
-            <ProjectTitle>orbit</ProjectTitle>
+            <ProjectTitle>sock8</ProjectTitle>
             <ProjectLinks>
-              <Link href="https://github.com/tsanga/orbit" target="_blank">
+              <Link href="https://sock8.com" target="_blank">
+                [website]
+              </Link>
+              <Link href="https://github.com/sock-8" target="_blank">
                 [github]
               </Link>
             </ProjectLinks>
           </ProjectMeta>
           <ProjectBody>
-            orbit is a WebSockets-as-a-service API and SDK aiming to provide the
+            sock8 is a WebSockets-as-a-service API and SDK aiming to provide the
             best possible experience for developers wanting to add real-time
             features to Next.js applications.
           </ProjectBody>
