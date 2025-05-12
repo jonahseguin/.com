@@ -22,11 +22,11 @@ export const Nav = () => {
           <Link
             href="/"
             className={cn(
-              "font-mono text-sm font-extrabold text-phthalo-text tracking-widest lowercase leading-none",
+              "font-mono text-sm font-extrabold text-phthalo-text tracking-widest leading-none",
               pathname === "/" && "sm:underline sm:underline-offset-8"
             )}
           >
-            jonah seguin
+            Jonah Seguin
           </Link>
         </li>
       </ul>
