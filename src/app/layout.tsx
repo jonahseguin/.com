@@ -69,6 +69,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary",
+    title: "Jonah Seguin - Software Developer",
+    description: "Full-stack Software Developer in Montréal",
+    images: [
+      {
+        url: "https://jonahseguin.com/og.jpg",
+        width: 410,
+        height: 410,
+        alt: "Jonah Seguin",
+      },
+    ],
+    creator: "@jonahseguin",
+  },
 };
 
 export default function RootLayout({
